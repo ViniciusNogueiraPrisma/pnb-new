@@ -7430,6 +7430,34 @@ p {
     grid-template-columns: auto auto;
   }
 }
+@media (max-width: 1200px) {
+  .sobre-pnb {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  .container-produtos {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  #section-duvida {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media (max-width: 560px) {
+  .sobre-pnb {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container-produtos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #section-duvida {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .header-qs {
   padding: 0;
   margin: 0;
