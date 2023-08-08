@@ -5857,10 +5857,6 @@ footer {
   border: 1px solid red;
 }
 
-.swiper-hover-div:hover .swiper-content {
-  transition: 0.5s ease;
-  padding: 40px;
-}
 .swiper-hover-div:hover .swiper-content p {
   color: black;
 }
@@ -6132,7 +6128,7 @@ footer {
 
 .swiper-content-icon span {
   color: #01518c;
-  font-size: 19px;
+  font-size: 16px;
   font-family: "PT Serif";
   font-weight: 400;
   line-height: 29.4px;
@@ -6144,6 +6140,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 64px;
+  gap: 20px;
 }
 
 .swiper-content img {
