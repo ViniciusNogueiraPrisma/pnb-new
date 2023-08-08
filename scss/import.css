@@ -1611,6 +1611,7 @@ nav {
 }
 .accordion {
   margin: 24px 0 32px;
+  width: 85%;
 }
 .accordion .accordion-item {
   border: none !important;
@@ -6853,6 +6854,7 @@ footer {
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
+  align-items: center;
   background: none;
   outline: none;
 }
@@ -6875,9 +6877,8 @@ footer {
   word-wrap: break-word;
 }
 .accordion button .icon {
-  display: inline-block;
+  display: flex;
   position: absolute;
-  top: 18px;
   right: 0;
   width: 22px;
   height: 22px;
@@ -7141,6 +7142,24 @@ footer {
     padding-right: 0;
   }
 }
+#accordion-button-3 {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
+#accordion-button-2 {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
+#accordion-button-1 {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
 .sobre-pnb {
   background-color: #eeeeee;
 }
@@ -7314,6 +7333,8 @@ footer {
 
 .accordion-duvida {
   margin-top: 42px;
+  display: flex;
+  justify-content: center;
 }
 
 .accordion-menu {
