@@ -313,17 +313,6 @@ svg {
   display: block;
 }
 
-@media (min-width: 1440px) {
-  .container-responsivo-full {
-    max-width: 1240px !important;
-  }
-}
-@media (min-width: 1660px) {
-  .container-responsivo-full {
-    max-width: 1432px !important;
-  }
-}
-
 .container-responsivo-full-image {
   margin: 0 auto;
 }
@@ -5931,7 +5920,7 @@ footer {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1300px !important;
 }
 
 .nav-texts a::after {

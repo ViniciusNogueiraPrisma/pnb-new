@@ -103,14 +103,14 @@ svg {
   display: block;
 }
 
-.container-responsivo-full {
-  @media (min-width: 1440px) {
-    max-width: 1240px !important;
-  }
-  @media (min-width: 1660px) {
-    max-width: 1432px !important;
-  }
-}
+// .container-responsivo-full {
+//   @media (min-width: 1440px) {
+//     max-width: 1240px !important;
+//   }
+//   @media (min-width: 1660px) {
+//     max-width: 1432px !important;
+//   }
+// 
 
 .container-responsivo-full-image {
   margin: 0 auto;
