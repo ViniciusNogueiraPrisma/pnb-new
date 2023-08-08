@@ -5920,7 +5920,7 @@ footer {
 }
 
 .container {
-  max-width: 1300px !important;
+  max-width: 1250px !important;
 }
 
 .nav-texts a::after {
@@ -6925,7 +6925,6 @@ footer {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
   background-color: white;
-  padding: 16px 32px 16px 32px;
 }
 .accordion .accordion-content p {
   margin-bottom: 0;
