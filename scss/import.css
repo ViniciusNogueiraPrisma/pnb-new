@@ -4341,7 +4341,6 @@ footer {
 
 .prisma-footer {
   border-top: 1px solid gray;
-  padding-right: 38px;
 }
 
 .content-footer-prisma {
@@ -7488,16 +7487,15 @@ p {
 }
 @media (max-width: 560px) {
   .sobre-pnb {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container-produtos {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .container-produtos {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  #section-duvida {
-    padding-left: 40px;
-    padding-right: 40px;
+  .accordion {
+    width: 100% !important;
   }
 }
 .header-qs {
