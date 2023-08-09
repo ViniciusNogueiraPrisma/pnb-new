@@ -8323,6 +8323,11 @@ p {
   padding-right: 20px;
 }
 
+.container-infos-contato {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title-contato h1 {
   color: #002e5f;
   font-size: 34px;
