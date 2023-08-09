@@ -1040,12 +1040,12 @@ $blue: #03b5d2;
 }
 
 @media (max-width: 800px) {
-  .cards-home {
-    display: none;
-  }
-
   .last-card {
     margin: 0;
+  }
+
+  .cards-home {
+    display: none;
   }
 
   .cards-home-carrosel {

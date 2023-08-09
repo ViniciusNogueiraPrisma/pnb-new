@@ -7173,11 +7173,11 @@ footer {
   }
 }
 @media (max-width: 800px) {
-  .cards-home {
-    display: none;
-  }
   .last-card {
     margin: 0;
+  }
+  .cards-home {
+    display: none;
   }
   .cards-home-carrosel {
     display: block;
@@ -8319,10 +8319,6 @@ p {
 .content-dados-contato-pnb {
   display: flex;
   gap: 40px;
-}
-
-.cards-home-carrosel {
-  display: none;
 }
 
 .mySwiper-carrosel-cards-qs {

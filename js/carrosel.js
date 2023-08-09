@@ -24,7 +24,7 @@ function checkWindowSizeHome() {
   //   swiperHome.params.slidesPerView = 2;
   // }
 
-  swiperQuemSomos.update();
+  // swiperQuemSomos.update();
 }
 
 checkWindowSizeHome();
@@ -56,37 +56,37 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 });
 
-let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: true,
-  // },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   // autoplay: {
+//   //   delay: 2000,
+//   //   disableOnInteraction: true,
+//   // },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
-function checkWindowSizeQs() {
-  if (window.innerWidth <= 1000) {
-    swiperQuemSomos.params.slidesPerView = 2;
-  } else {
-    swiperQuemSomos.params.slidesPerView = 3;
-  }
+// function checkWindowSizeQs() {
+//   if (window.innerWidth <= 1000) {
+//     swiperQuemSomos.params.slidesPerView = 2;
+//   } else {
+//     swiperQuemSomos.params.slidesPerView = 3;
+//   }
 
-  if (window.innerWidth <= 780) {
-    swiperQuemSomos.params.slidesPerView = 1;
-  } else {
-    swiperQuemSomos.params.slidesPerView = 2;
-  }
+//   if (window.innerWidth <= 780) {
+//     swiperQuemSomos.params.slidesPerView = 1;
+//   } else {
+//     swiperQuemSomos.params.slidesPerView = 2;
+//   }
 
-  swiperQuemSomos.update();
-}
+//   swiperQuemSomos.update();
+// }
 
-checkWindowSizeQs();
-window.addEventListener("resize", checkWindowSizeQs);
+// checkWindowSizeQs();
+// window.addEventListener("resize", checkWindowSizeQs);
 
 function checkWindowSize() {
   if (window.innerWidth <= 1200) {
@@ -101,7 +101,8 @@ function checkWindowSize() {
 checkWindowSize();
 window.addEventListener("resize", checkWindowSize);
 
-var swiper = new Swiper(".mySwiper-carrosel-h", {
+var swiperCarosselHome = new Swiper(".mySwiper-carrosel-h", {
+  slidesPerView: 1,
   spaceBetween: 20,
   autoplay: {
     delay: 1500,
@@ -112,6 +113,19 @@ var swiper = new Swiper(".mySwiper-carrosel-h", {
     clickable: true,
   },
 });
+
+function checkWindowSizeCarroselHome() {
+  if (window.innerWidth <= 1200) {
+    swiperCarosselHome.params.slidesPerView = 1;
+  } else {
+    swiperCarosselHome.params.slidesPerView = 2;
+  }
+
+  swiperCarosselHome.update();
+}
+
+checkWindowSizeCarroselHome();
+window.addEventListener("resize", checkWindowSizeCarroselHome);
 
 var swiperProdutos = new Swiper(".mySwiper-carrosel-produtos", {
   slidesPerView: 3,
@@ -241,7 +255,7 @@ function checkWindowSizeProdutos() {
 checkWindowSizeProdutos();
 window.addEventListener("resize", checkWindowSizeProdutos);
 
-var swiper = new Swiper(".mySwiperEquipe", {
+var swiperEquipe = new Swiper(".mySwiperEquipe", {
   slidesPerView: 3,
   spaceBetween: 30,
   autoplay: {
