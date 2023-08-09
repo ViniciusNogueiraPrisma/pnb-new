@@ -5867,7 +5867,7 @@ footer {
 }
 
 .whatsapp-icon img {
-  width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
   height: auto;
   border-radius: 50%;
 }
@@ -7265,6 +7265,12 @@ footer {
   padding: 0;
 }
 
+@media (max-width: 385px) {
+  #section-produtos {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .sobre-pnb {
   background-color: #eeeeee;
 }
