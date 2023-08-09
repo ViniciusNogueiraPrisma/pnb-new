@@ -8734,8 +8734,8 @@ input[type=checkbox].switch:disabled:not(:checked):after {
 @media (max-width: 650px) {
   .content-contato {
     margin-bottom: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 420px) {
