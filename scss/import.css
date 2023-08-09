@@ -4144,6 +4144,7 @@ footer {
 
 .container-footer {
   display: flex;
+  padding: 0;
   justify-content: center;
 }
 
@@ -8429,6 +8430,8 @@ p {
   background-color: #eeeeee;
   margin-bottom: -60px;
   z-index: 1;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .form-control #togglePassword,
@@ -8602,6 +8605,10 @@ input[type=checkbox].switch:disabled:not(:checked):after {
     flex-direction: column;
     width: 100%;
   }
+  .container-contato {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
   .btns-form {
     display: flex;
     justify-content: center;
@@ -8618,7 +8625,7 @@ input[type=checkbox].switch:disabled:not(:checked):after {
   .infos-contato-last {
     display: block;
     background-color: #002e5f;
-    padding: 40px 42px 40px 42px;
+    padding: 100px 42px 40px 100px;
   }
   .infos-contato-last span {
     color: #eeeeee;
@@ -8677,8 +8684,8 @@ input[type=checkbox].switch:disabled:not(:checked):after {
 @media (max-width: 650px) {
   .content-contato {
     margin-bottom: -20px;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /* Pages */
