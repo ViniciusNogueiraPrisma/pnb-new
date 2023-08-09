@@ -8690,6 +8690,14 @@ input[type=checkbox].switch:disabled:not(:checked):after {
     padding-right: 20px;
   }
 }
+@media (max-width: 420px) {
+  .checkbox-input-contato {
+    display: flex;
+  }
+  input[type=checkbox]:not(.switch) {
+    padding-left: 20px;
+  }
+}
 /* Pages */
 #erro {
   width: 100%;
