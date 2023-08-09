@@ -6546,6 +6546,8 @@ footer {
 }
 
 .infos-content-banner-qs {
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   justify-content: space-between;
 }
