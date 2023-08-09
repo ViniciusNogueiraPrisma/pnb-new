@@ -670,6 +670,7 @@ nav {
 .header-txts {
   position: absolute;
   margin-left: 510px;
+  margin-top: 50px;
 }
 
 .header-txts h3 {
