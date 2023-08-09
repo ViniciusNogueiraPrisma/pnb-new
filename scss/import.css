@@ -4162,6 +4162,12 @@ footer {
   gap: 12px;
 }
 
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .logo-footer {
   width: 25%;
 }
@@ -4475,6 +4481,17 @@ footer {
   }
   .news-footer input {
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper-footer {
+    border: 1px solid red;
+  }
+  .slide-footer {
+    border: 1px solid red;
+  }
+  .mySwiper-footer {
+    border: 1px solid black;
   }
 }
 @media (max-width: 647px) {

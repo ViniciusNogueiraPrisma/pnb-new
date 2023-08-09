@@ -250,6 +250,18 @@ footer {
   gap: 12px;
 }
 
+// .slick-slide {
+//   margin-left: 24px;
+//   width: 476px !important;
+//   height: 270px !important;
+// }
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .logo-footer {
   width: 25%;
 }
@@ -425,8 +437,6 @@ footer {
   overflow: hidden;
   transition: height 200ms;
 }
-
-
 
 .accordion-footer-div.active-footer {
   display: block;
@@ -619,12 +629,18 @@ footer {
   }
 }
 
-// @media (max-width: 1200px) {
-//   .wrapper-footer {
-//     height: 332px;
-//     display: flex;
-//     justify-content: center;
-//   }
+@media (max-width: 1200px) {
+  .wrapper-footer {
+    border: 1px solid red;
+  }
+
+  .slide-footer {
+    border: 1px solid red;
+  }
+  .mySwiper-footer {
+    border: 1px solid black;
+  }
+}
 
 //   // .content-image-footer-carrosel {
 //   //   margin-top: -120px;

@@ -91,32 +91,32 @@ var swiperAval = new Swiper(".mySwiper-avaliacao", {
 // window.addEventListener("resize", checkWindowSizeAval);
 
 var swiperFooter = new Swiper(".mySwiper-footer", {
-  slidesPerView: "auto",
-  centeredSlides: true,
+  slidesPerView: 1,
   spaceBetween: 24,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // loop: true,
 
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination-footer",
     clickable: true,
   },
 });
 
-function checkWindowSizeFooter() {
-  if (window.innerWidth <= 600) {
-    swiperFooter.params.slidesPerView = 1;
-  } else {
-    swiperFooter.params.slidesPerView = 2;
-  }
+// function checkWindowSizeFooter() {
+//   if (window.innerWidth <= 600) {
+//     swiperFooter.params.slidesPerView = 1;
+//   } else {
+//     swiperFooter.params.slidesPerView = 2;
+//   }
 
-  swiperFooter.update();
-}
+//   swiperFooter.update();
+// }
 
-checkWindowSizeFooter();
-window.addEventListener("resize", checkWindowSizeFooter);
+// checkWindowSizeFooter();
+// window.addEventListener("resize", checkWindowSizeFooter);
 
 // function checkWindowSizeFooter() {
 //   if (window.innerWidth <= 1270) {
@@ -182,6 +182,32 @@ var swiper = new Swiper(".myPNB", {
 // });
 
 // splide.mount();
+
+// $(document).ready(function () {
+//   $(".slick-carousel").slick({
+//     // infinite: true,
+//     // centerMode: true,
+//     // slidesToShow: 1,
+//     // // slidesToScroll: 3,
+//     // adaptiveHeight: true, 
+//     // fade: true,
+//     // autoplay: true,
+//     // autoplaySpeed: 2000,
+//     rtl: true
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type: 'loop',    // Pode ser 'loop', 'fade', etc.
+    perPage: 1,       // Quantidade de slides visíveis
+    autoplay: true,   // Ativar reprodução automática
+    interval: 2000,
+    focus: 'center',
+    rewind: true,   // Intervalo entre slides em milissegundos
+    pagination: true // Ocultar paginação (pontos indicando o slide atual)
+  }).mount();
+});
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
