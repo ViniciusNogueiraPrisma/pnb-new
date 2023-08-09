@@ -496,9 +496,6 @@
   }
 }
 @media (max-width: 600px) {
-  .infos-banner-qs {
-    margin-top: -47.998962vh;
-  }
   .infos-content-banner-qs {
     flex-direction: column;
     gap: 50px;
