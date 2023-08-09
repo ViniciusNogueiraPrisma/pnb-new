@@ -17,6 +17,20 @@
   background: none;
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Distância a partir do canto inferior */
+  right: 20px; /* Distância a partir do canto direito */
+  z-index: 1000; /* Coloque um valor alto para que fique acima de outros elementos */
+}
+
+.whatsapp-icon img {
+  width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: auto;
+  border-radius: 50%;
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 #btn-search:hover {
   background-color: none;
 }
