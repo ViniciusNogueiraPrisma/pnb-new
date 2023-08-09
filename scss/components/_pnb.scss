@@ -380,6 +380,10 @@ p {
   margin-bottom: 200px;
 }
 
+.content-image-footer-carrosel-last {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .swiper-pagination {
     margin-bottom: -10px;
@@ -433,6 +437,16 @@ p {
 @media (max-width: 450px) {
   .card-parceiros {
     grid-template-columns: auto auto;
+  }
+}
+
+@media(max-width: 1030px) {
+  .content-image-footer-carrosel {
+    display: none;
+  }
+
+  .content-image-footer-carrosel-last {
+    display: flex;
   }
 }
 

@@ -93,7 +93,7 @@ var swiperAval = new Swiper(".mySwiper-avaliacao", {
 var swiperFooter = new Swiper(".mySwiper-footer", {
   slidesPerView: 1,
   spaceBetween: 24,
-  // loop: true,
+  loop: false,
 
   // autoplay: {
   //   delay: 2000,
@@ -208,6 +208,19 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: true // Ocultar paginação (pontos indicando o slide atual)
   }).mount();
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   new Splide('.splide-last', {
+//     type: 'loop',    // Pode ser 'loop', 'fade', etc.
+//     perPage: 1,       // Quantidade de slides visíveis
+//     autoplay: true,   // Ativar reprodução automática
+//     interval: 2000,
+//     focus: 'center',
+//     rewind: true,   // Intervalo entre slides em milissegundos
+//     pagination: true // Ocultar paginação (pontos indicando o slide atual)
+//   }).mount();
+// });
+
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
