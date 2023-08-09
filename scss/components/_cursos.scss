@@ -125,13 +125,14 @@
 
   .content-texts-cursos {
     padding-top: 5px;
-    width: 65%;
+    width: 100%;
   }
 
   .content-cursos-infos-pnb > .content-img-cursos img {
     border-radius: 4px;
     height: 250px;
-    width: 634px;
+    // width: 634px;
+    width: 100vw;
     object-fit: cover;
   }
 
@@ -145,5 +146,22 @@
 
   .btns-content-text-cursos {
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 374px) {
+  .btns-content-text-cursos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-join {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    align-items: center;
   }
 }
