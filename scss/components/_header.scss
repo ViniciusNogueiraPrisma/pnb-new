@@ -34,6 +34,10 @@ nav {
   display: flex;
 }
 
+// #nav-chat {
+//   width: 24px;
+// }
+
 .nav-texts a {
   text-decoration: none;
   margin: 17px;
@@ -274,8 +278,8 @@ nav {
 
 .header {
   transition: 0.2s;
-  // height: 928px;
-  height: 97.17277486910994vh;
+  height: 928px;
+  // height: 97.17277486910994vh;
   background-image: url("../../images/new-images/Home/banner_home_04.jpg");
   padding: 16px 0 0;
   background-color: rgb(220, 220, 220);
