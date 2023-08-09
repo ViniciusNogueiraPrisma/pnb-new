@@ -1,7 +1,14 @@
+.banner-plugin-infos {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .container-plugin {
   margin-top: 64px;
   margin-bottom: 64px;
   padding-bottom: 20px;
+  padding-left: 72px;
+  padding-right: 72px;
   width: 63%;
 
   h4 {
@@ -60,5 +67,35 @@
 
   a span {
     color: white;
+  }
+}
+
+@media (max-width: 960px) {
+  .container-plugin {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-plugin {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .banner-plugin-infos {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-plugin a {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-plugin a span {
+    margin: auto;
   }
 }
