@@ -96,6 +96,8 @@
 
 .infos-banner-qs {
   position: absolute;
+  padding-left: 0;
+  padding-right: 0;
   margin-top: -39.9989615784vh;
 }
 

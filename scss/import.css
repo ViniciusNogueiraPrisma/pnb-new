@@ -6546,8 +6546,6 @@ footer {
 }
 
 .infos-content-banner-qs {
-  padding-left: 0;
-  padding-right: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -7708,6 +7706,8 @@ p {
 
 .infos-banner-qs {
   position: absolute;
+  padding-left: 0;
+  padding-right: 0;
   margin-top: -39.9989615784vh;
 }
 
