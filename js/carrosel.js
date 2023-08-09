@@ -11,6 +11,25 @@ let swiperHome = new Swiper(".mySwiper", {
   },
 });
 
+function checkWindowSizeHome() {
+  if (window.innerWidth <= 1000) {
+    swiperHome.params.slidesPerView = 1;
+  } else {
+    swiperHome.params.slidesPerView = 2;
+  }
+
+  // if (window.innerWidth <= 780) {
+  //   swiperHome.params.slidesPerView = 1;
+  // } else {
+  //   swiperHome.params.slidesPerView = 2;
+  // }
+
+  swiperQuemSomos.update();
+}
+
+checkWindowSizeHome();
+window.addEventListener("resize", checkWindowSizeHome);
+
 var swiper = new Swiper(".mySwiper-carrosel-cards-qs", {
   spaceBetween: 20,
   slidesPerView: 1,
