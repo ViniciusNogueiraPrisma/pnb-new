@@ -5875,8 +5875,18 @@ footer {
   transition: 0.5s ease;
 }
 
+.swiper-hover-div:hover .swiper-content {
+  padding: 45px;
+  transition: 0.5s ease;
+}
+
+.swiper-hover-div .swiper-content p {
+  transition: 0.5s ease;
+}
+
 .swiper-hover-div:hover .swiper-content p {
   color: black;
+  transition: 0.5s ease;
 }
 
 .fade-in {

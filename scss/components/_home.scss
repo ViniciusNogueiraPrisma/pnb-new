@@ -50,11 +50,21 @@
 }
 
 .swiper-hover-div:hover .swiper-content {
+  padding: 45px;
+  transition: .5s ease;
+}
+
+.swiper-hover-div .swiper-content p {
+  transition: .5s ease;
+}
+
+.swiper-hover-div:hover .swiper-content {
   // transition: 0.5s ease;
   // padding: 40px;
 
   p {
     color: black;
+    transition: 0.5s ease;
   }
 }
 
