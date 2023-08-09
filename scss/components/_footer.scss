@@ -298,6 +298,12 @@ footer {
   gap: 40px;
 }
 
+#section-produtos {
+  border: 1px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .direitos-footer span {
   color: #bbbbbb;
   font-size: 16px;
@@ -716,13 +722,13 @@ footer {
   }
 }
 
-@media (max-width: 530px) {
-  .card-footer-content {
-    // width: auto;
-    // margin-left: 25px;
-    // margin-right: 25px;
-  }
-}
+// @media (max-width: 530px) {
+//   .card-footer-content {
+//     // width: auto;
+//     // margin-left: 25px;
+//     // margin-right: 25px;
+//   }
+// }
 
 // @media (max-width: 450px) {
 //   .container-footer {

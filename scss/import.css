@@ -4204,6 +4204,12 @@ footer {
   gap: 40px;
 }
 
+#section-produtos {
+  border: 1px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .direitos-footer span {
   color: #bbbbbb;
   font-size: 16px;
