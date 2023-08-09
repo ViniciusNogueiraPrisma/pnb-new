@@ -80,6 +80,7 @@
 }
 
 .img-quem-somos {
+  height: 654px;
   // background-image: url("../../images/new-images/banner-qs.png");
   // object-fit: cover;
   // background-repeat: no-repeat;
@@ -95,6 +96,7 @@
   // justify-content: center;
   // display: flex;
   // width: auto;
+  padding-bottom: 0;
 }
 
 #vector-img {
@@ -125,7 +127,7 @@
   height: auto;
   // margin-top: -31px;
   margin-top: -2.246073vh;
-  z-index: 1;
+  // z-index: 1;
 }
 
 .container-quem-somos {
@@ -197,7 +199,9 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 72px;
+  padding-bottom: 64px;
   width: 50%;
+  margin-top: 80px;
 
   h1 {
     color: #002e5f;
@@ -231,11 +235,15 @@
 
 .text-img-content-qs img {
   object-fit: cover;
-  // width: 576px;
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  width: 900px;
+  margin-left: -600px;
+  z-index: -1;
+  // width: 100vw;
+  // max-width: 100%;
+  // height: auto;
   // width: 60.31413612565445vh;
-  height: 666px;
+  // height: 666px;
   // height: 69.73821989528795vh;
 }
 
