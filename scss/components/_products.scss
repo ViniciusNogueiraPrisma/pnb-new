@@ -13,6 +13,14 @@
   gap: 24px;
 }
 
+#div2 {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#div1 {
+  transition: opacity 0.5s ease-in-out;
+}
+
 .card-cursos-pnb {
   display: flex;
   flex-direction: column;

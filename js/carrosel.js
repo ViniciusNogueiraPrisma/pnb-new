@@ -189,7 +189,7 @@ var swiper = new Swiper(".myPNB", {
 //     // centerMode: true,
 //     // slidesToShow: 1,
 //     // // slidesToScroll: 3,
-//     // adaptiveHeight: true, 
+//     // adaptiveHeight: true,
 //     // fade: true,
 //     // autoplay: true,
 //     // autoplaySpeed: 2000,
@@ -197,16 +197,16 @@ var swiper = new Swiper(".myPNB", {
 //   });
 // });
 
-document.addEventListener('DOMContentLoaded', function () {
-  new Splide('.splide', {
-    type: 'loop',    // Pode ser 'loop', 'fade', etc.
-    perPage: 1,       // Quantidade de slides visíveis
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    type: "loop", // Pode ser 'loop', 'fade', etc.
+    perPage: 1, // Quantidade de slides visíveis
     // autoplay: true,   // Ativar reprodução automática
     // interval: 2000,
-    focus: 'center',
+    focus: "center",
     arrows: false,
-    rewind: true,   // Intervalo entre slides em milissegundos
-    pagination: true // Ocultar paginação (pontos indicando o slide atual)
+    rewind: true, // Intervalo entre slides em milissegundos
+    pagination: true, // Ocultar paginação (pontos indicando o slide atual)
   }).mount();
 });
 
@@ -221,7 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //     pagination: true // Ocultar paginação (pontos indicando o slide atual)
 //   }).mount();
 // });
-
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
@@ -247,6 +246,8 @@ function showDiv(showElement, hideElement, showLink, hideLink) {
   showLink.classList.add("active-border");
   hideLink.classList.remove("active-border");
 }
+
+
 
 $(document).ready(function () {
   $("#voltar-ao-topo").click(function (event) {
