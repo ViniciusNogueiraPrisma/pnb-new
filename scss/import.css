@@ -4143,6 +4143,8 @@ footer {
 }
 
 .container-footer {
+  padding-right: 20px;
+  padding-left: 20px;
   display: flex;
   padding: 0;
   justify-content: center;
@@ -6546,6 +6548,8 @@ footer {
 }
 
 .infos-content-banner-qs {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -8315,6 +8319,8 @@ p {
 .container-contato {
   margin-top: 64px;
   margin-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .title-contato h1 {
