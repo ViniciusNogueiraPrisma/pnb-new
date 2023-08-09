@@ -5875,10 +5875,6 @@ footer {
   transition: 0.5s ease;
 }
 
-.swiper-hover-div:hover #img-swiper-slide {
-  border: 1px solid red;
-}
-
 .swiper-hover-div:hover .swiper-content p {
   color: black;
 }
@@ -6030,8 +6026,6 @@ footer {
   }
 }
 .container-carrosel {
-  padding-left: 72px;
-  padding-right: 72px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -6043,7 +6037,7 @@ footer {
 }
 
 .content-text-carrosel {
-  width: 45%;
+  width: 50%;
 }
 
 .content-text-carrosel h1 {
@@ -6073,11 +6067,57 @@ footer {
   word-wrap: break-word;
 }
 
-.swiper-hover-div img {
+/* Estilos para o efeito de overlay dentro da imagem */
+.image-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  height: 100%;
+}
+
+.swiper-hover-div:hover .overlay {
+  opacity: 1;
+}
+
+.swiper-hover-div:hover .image-with-overlay {
+  transform: scale(1.1); /* Aplica a escala ao passar o mouse */
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: height 0.5s ease; /* Adicione a transição de altura */
+}
+
+.image-with-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease-out, opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ajuste a altura do overlay conforme necessário */
+  background: linear-gradient(to top, rgba(15, 66, 160, 0.5) 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.9s ease; /* Transição de opacidade */
 }
 
 .content-text-carrosel button {
@@ -6101,12 +6141,41 @@ footer {
 }
 
 .content-carrosel-eng {
-  width: 50%;
+  width: 60%;
 }
 
 @media (max-width: 800px) {
   .texts-home button {
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .content-carrosel .content-carrosel-eng {
+    width: 40%;
+  }
+  .content-carrosel {
+    padding-left: 64px;
+  }
+}
+@media (max-width: 800px) {
+  .content-carrosel .content-carrosel-eng {
+    width: 60% !important;
+  }
+  .content-carrosel .content-text-carrosel {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  .content-carrosel {
+    padding-left: 0;
+  }
+}
+@media (max-width: 560px) {
+  .content-carrosel .content-text-carrosel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .content-carrosel .content-carrosel-eng {
+    width: 100% !important;
   }
 }
 .swiper-content {
@@ -6140,7 +6209,7 @@ footer {
 
 .swiper-content-icon span {
   color: #01518c;
-  font-size: 16px;
+  font-size: 21px;
   font-family: "PT Serif";
   font-weight: 400;
   line-height: 29.4px;
@@ -7420,7 +7489,6 @@ p {
     margin-bottom: -10px;
   }
   .parceiros-none {
-    border: 1px solid red;
     display: none;
   }
   .card-parceiros {

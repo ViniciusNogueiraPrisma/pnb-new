@@ -1,6 +1,6 @@
 .container-carrosel {
-  padding-left: 72px;
-  padding-right: 72px;
+  // padding-left: 72px;
+  // padding-right: 72px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -13,7 +13,7 @@
 }
 
 .content-text-carrosel {
-  width: 45%;
+  width: 50%;
 }
 
 .content-text-carrosel h1 {
@@ -43,16 +43,157 @@
   word-wrap: break-word;
 }
 
-.swiper-hover-div img {
+/* Estilos para o efeito de overlay dentro da imagem */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  object-fit: cover;
+  height: 100%;
 }
 
-// .slide-footer {
-//   margin: 0 0 auto 0;
-//   width: auto !important;
+// .swiper-hover-div .image-container {
+//   transition: height 0.5s ease; /* Adicione a transição de altura */
+// }
+
+// .swiper-hover-div:hover .image-with-overlay {
+//   z-index: 1;
+//   height: 269px;
+//   max-height: 269px; /* Aumenta a altura da div container */
+// }
+
+// .overlay {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 50%; /* Ajuste a altura do overlay conforme necessário */
+//   background: linear-gradient(
+//     to top,
+//     rgba(0, 89, 255, 0.5) 50%,
+//     transparent 100%
+//   );
+//   opacity: 0;
+//   transition: opacity 0.9s ease; /* Transição de opacidade */
+// }
+
+.swiper-hover-div:hover .overlay {
+  opacity: 1;
+}
+
+.swiper-hover-div:hover .image-with-overlay {
+  transform: scale(1.1); /* Aplica a escala ao passar o mouse */
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: height 0.5s ease; /* Adicione a transição de altura */
+}
+
+.image-with-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-out, opacity 0.3s ease;
+}
+
+// .swiper-hover-div:hover .image-container {
+//   height: 269px; /* Aumenta a altura da div container */
+// }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ajuste a altura do overlay conforme necessário */
+  background: linear-gradient(
+    to top,
+    rgba(15, 66, 160, 0.5) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.9s ease; /* Transição de opacidade */
+}
+
+// .swiper-hover-div:hover .overlay {
+//   opacity: 1;
+// }
+
+// .swiper-hover-div:hover .image-with-overlay {
+//   opacity: 0.8; /* Diminui a opacidade da imagem no hover */
+// }
+
+// .image-with-overlay {
+//   object-fit: cover;
+//   background-size: contain;
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   transition: opacity 0.3s ease;
+// }
+
+// .overlay {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%; /* Ajuste a altura do overlay conforme necessário */
+//   background: linear-gradient(
+//     to top,
+//     rgba(73, 98, 182, 0.5) 0%,
+//     transparent 100%
+//   );
+//   opacity: 0;
+//   transition: opacity 0.3s ease;
+// }
+
+// .swiper-hover-div:hover .overlay {
+//   opacity: 1;
+// }
+
+// .swiper-hover-div img {
+//   width: 100%;
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 4px;
+//   object-fit: cover;
+// }
+
+// .swiper-hover-div:hover .image-with-overlay{
+//   transform: scaleY(1.05);
+//   height: 269px;
+// }
+
+// .image-with-overlay {
+//   transition: transform 0.5s ease height 1s ease;
+// }
+
+// .swiper-hover-div {
+//   transition: transform 0.5s ease;
+// }
+
+// .swiper-hover-div:hover .image-with-overlay {
+//   transition: opacity 0.3s ease;
+//   // height: 259px;
+//   // transform: scale(1.1);
+// }
+
+// .swiper-hover-div:hover .image-with-overlay {
+//   opacity: 0.8; /* Diminui a opacidade da imagem no hover */
 // }
 
 .content-text-carrosel button {
@@ -78,12 +219,49 @@
 }
 
 .content-carrosel-eng {
-  width: 50%;
+  width: 60%;
 }
 
 @media (max-width: 800px) {
   .texts-home button {
     width: 100%;
+  }
+}
+
+@media(max-width: 1200px) {
+  .content-carrosel .content-carrosel-eng {
+    width: 40%;
+  }
+
+  .content-carrosel {
+    padding-left: 64px;
+  }
+}
+
+@media(max-width: 800px) {
+  .content-carrosel .content-carrosel-eng {
+    width: 60% !important;
+  }
+
+  .content-carrosel .content-text-carrosel {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .content-carrosel {
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 560px) {
+
+  .content-carrosel .content-text-carrosel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-carrosel .content-carrosel-eng {
+    width: 100% !important;
   }
 }
 
