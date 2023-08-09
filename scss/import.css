@@ -4205,7 +4205,6 @@ footer {
 }
 
 #section-produtos {
-  border: 1px solid red;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -7189,6 +7188,8 @@ footer {
 
 .content-pnb {
   margin-top: 112px;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: center;
 }
 
