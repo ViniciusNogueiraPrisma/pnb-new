@@ -146,6 +146,26 @@
   word-wrap: break-word;
 }
 
+.section-owner-qs {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.container-faq-ns {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.container-quadros-np {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.infos-content-banner-np {
+  padding-left: 72px !important;
+  padding-right: 72px !important;
+}
+
 .cards-produto-content {
   margin-top: 32px;
   display: flex;
@@ -166,6 +186,10 @@
 
 .cards-content {
   transition: 0.5s ease;
+}
+
+.accordion-np {
+  width: 100%;
 }
 
 .cards-content:hover {
@@ -774,6 +798,10 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
   }
 }
 
+// .text-content-qs {
+//   border: 1px solid red;
+// }
+
 #first-icon-timeline {
   margin-top: 30px;
 }
@@ -1191,5 +1219,83 @@ $blue: #03b5d2;
   #section-produtos {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-promos-produtos-ns {
+    flex-direction: column;
+  }
+  
+  .card-valores-promos {
+    width: 100%;
+  }
+
+  .card-infos-promos {
+    width: 100%;
+  }
+
+  .timeline {
+    margin-top: 54px;
+  }
+
+  #last-icon-timeline {
+    margin-top: -2px;
+  }
+
+  #first-icon-timeline {
+    margin-top: 10px;
+  }
+  #middle-icon-timeline {
+    margin-top: 9px;
+  }
+
+  .timeline:before {
+    height: 90%;
+    top: 13px;
+  }
+
+  .card-infos-promos h5 {
+    padding-left: 20px;
+  }
+  
+  .line-card-infos-promos {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1122px) {
+  .section-owner-qs {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .owner-data-qs {
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .owner-img-qs {
+    max-width: 100% !important;
+    // width: 100vw;
+    margin-top: 40px;
+  }
+
+  .owner-img-qs {
+    background-position: center bottom;
+    position: relative;
+    height: 500px;
+  }
+
+  .owner-img-qs img {
+    width: 100%;
+    background-position: center bottom;
+    vertical-align: bottom;
+    position: relative;
+
+    height: 100%;
+    object-fit: cover;
   }
 }

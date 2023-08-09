@@ -13,13 +13,17 @@
 }
 
 .img-header-qs {
-  padding-right: 72px;
+  // padding-right: 72px;
   display: flex;
 }
 
 #img-header-qs-ceo {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  padding-right: 72px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 #vector-header-qs {
@@ -131,8 +135,9 @@
   padding-left: 24px;
   padding-right: 24px;
   width: 245px;
+  float: right;
 
-  margin-top: 430px;
+  margin-top: 280px;
   margin-left: -40px;
 
   h4 {
@@ -158,14 +163,18 @@
 }
 
 .img-quem-somos {
+  // border: 1px solid red;
+  padding: 0;
   // height: 100%;
-  margin-bottom: -52px;
+  // margin-bottom: -52px;
   // background-image: url("../../images/new-images/Vector\ 1.png");
   // object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: right 10% center;
+  // background-repeat: no-repeat;
+  // background-position: right 10% center;
+  // justify-content: space-between;
+  // display: flex;
 
-  z-index: -1;
+  // z-index: -1;
   // height: 666px;
   // height: 64.73822vh;
 }
@@ -193,18 +202,131 @@
   background-color: white;
 }
 
+#image-w-ceo {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.container-banner-ceo {
+  margin-top: 80px;
+  gap: 50px;
+
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+
+  background-image: url("../../images/new-images/vector-content.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  // z-index: -9999;
+}
+
+.image-text-banner-ceo {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: -40px;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+
+  background-color: #01518c;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  span {
+    // Wilson Neto
+    color: white;
+    font-size: 21px;
+    font-family: "PT Serif";
+    padding-right: 40px;
+    font-weight: 700;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  p {
+    // CEO, Trader
+    color: #dddddd;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+
+.texts-banner-ceo {
+  width: 50%;
+  margin: auto;
+
+  // margin-left: 8%;
+  // border: 1px solid red;
+  // border: 1px solid red;
+  z-index: 1;
+
+  h1 {
+    // A GESTÃO DE RISCO é um dos nossos principais pilares operacionais.
+    color: #0160a6;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+  }
+
+  h5 {
+    // Comunidade, formada pelo analista técnico Wilson Neto, para quem opera DAY TRADE no Mercado de Renda Variável utilizando a técnica de Leitura de Fluxo.
+    color: #666666;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+  }
+
+  p {
+    // A GESTÃO DE RISCO é um dos nossos principais pilares operacionais.
+    color: #0160a6;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.image-banner-ceo {
+  width: 50%;
+  display: flex;
+  // border: 1px solid red;
+}
+
 .conheca-time-qs {
-  background-color: #e8e8e8;
+  background-color: #fafafa;
   height: auto;
   // margin-top: -31px;
-  margin-top: -2.246073vh;
+  // margin-top: -2.246073vh;
   // z-index: 1;
 }
 
 .container-quem-somos {
   display: flex;
-  justify-content: space-between;
-  gap: 100px;
+  justify-content: center;
+  // padding-left: 7.733619763694952vh;
+  // border: 1px solid red;
+
+  // gap: 100px;
+  width: 100%;
 }
 .conheca-title-card-qs {
   padding-left: 72px;
@@ -266,14 +388,6 @@
 }
 
 .text-content-qs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 72px;
-  padding-bottom: 64px;
-  width: 50%;
-  margin-top: -50px;
-
   h1 {
     color: #002e5f;
     font-size: 34px;
@@ -645,6 +759,9 @@
   margin-top: 112px;
   gap: 40px;
   margin-bottom: 64px;
+
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .title-contato-pnb {
@@ -670,7 +787,7 @@
 }
 
 .contato-text-pnb {
-  width: 70%;
+  width: 71%;
 }
 
 .contato-text-pnb h4 {
@@ -698,6 +815,10 @@
   gap: 16px;
   display: flex;
 }
+
+// #sobre-banner-ceo {
+
+// }
 
 .box-contatos-pnb a {
   width: 100%;
@@ -782,6 +903,10 @@
   display: none;
 }
 
+.splide-qs-last {
+  display: none;
+}
+
 .mySwiper-carrosel-cards-qs {
   padding-top: 56px;
   padding-left: 40px;
@@ -806,9 +931,38 @@
   padding-bottom: 5px;
 }
 
-// * {
-//
-// }
+@media (max-width: 1110px) {
+  #splide-quem-somos-clientes {
+    display: none;
+  }
+
+  .splide-qs-last {
+    display: block;
+  }
+
+  .contato-text-pnb {
+    width: 100%;
+  }
+
+  .contato-pnb {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    padding-top: 80px;
+  }
+
+  .content-contato {
+    margin-top: 0;
+  }
+
+  .title-contato-pnb {
+    width: 100%;
+  }
+}
 
 @media (max-width: 1075px) {
   .items-menu-qs {
@@ -824,10 +978,69 @@
   }
 }
 
+@media (max-width: 683px) {
+  .box-contatos-pnb {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 406px) {
+  .contato-pnb {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .depoimentos-qs-title {
+    padding-left: 40px;
+  }
+
+  .carrosel-quem-somos {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title-card-content-qs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .infos-text-conheca-qs {
+    padding-right: 0px;
+  }
+
+  .title-card-content-qs {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .title-card-content-qs {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 72px;
+  }
+
+  .infos-text-conheca-qs {
+    width: 100%;
+  }
+
+  .conheca-title-card-qs {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   // .infos-banner-qs {
   //   margin-top: -47.998962vh;
   // }
+
+  .card-content-slide {
+    background-color: #000000 !important;
+  }
 
   .infos-content-banner-qs {
     flex-direction: column;

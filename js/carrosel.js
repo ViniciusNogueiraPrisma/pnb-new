@@ -52,41 +52,55 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: "center",
     arrows: false,
     rewind: true, // Intervalo entre slides em milissegundos
-    pagination: true, // Ocultar paginação (pontos indicando o slide atual)
+    pagination: false, // Ocultar paginação (pontos indicando o slide atual)
   }).mount();
 });
 
-// let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   // autoplay: {
-//   //   delay: 2000,
-//   //   disableOnInteraction: true,
-//   // },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide-qs-last", {
+    type: "loop", // Pode ser 'loop', 'fade', etc.
+    perPage: 1, // Quantidade de slides visíveis
+    // autoplay: true,   // Ativar reprodução automática
+    // interval: 2000,
+    focus: "center",
+    arrows: false,
+    rewind: true, // Intervalo entre slides em milissegundos
+    pagination: false, // Ocultar paginação (pontos indicando o slide atual)
+  }).mount();
+});
 
-// function checkWindowSizeQs() {
-//   if (window.innerWidth <= 1000) {
-//     swiperQuemSomos.params.slidesPerView = 2;
-//   } else {
-//     swiperQuemSomos.params.slidesPerView = 3;
-//   }
 
-//   if (window.innerWidth <= 780) {
-//     swiperQuemSomos.params.slidesPerView = 1;
-//   } else {
-//     swiperQuemSomos.params.slidesPerView = 2;
-//   }
+let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
-//   swiperQuemSomos.update();
-// }
+function checkWindowSizeQs() {
+  if (window.innerWidth <= 1000) {
+    swiperQuemSomos.params.slidesPerView = 2;
+  } else {
+    swiperQuemSomos.params.slidesPerView = 3;
+  }
 
-// checkWindowSizeQs();
-// window.addEventListener("resize", checkWindowSizeQs);
+  if (window.innerWidth <= 850) {
+    swiperQuemSomos.params.slidesPerView = 1;
+  } else {
+    swiperQuemSomos.params.slidesPerView = 2;
+  }
+
+  swiperQuemSomos.update();
+}
+
+checkWindowSizeQs();
+window.addEventListener("resize", checkWindowSizeQs);
 
 function checkWindowSize() {
   if (window.innerWidth <= 1200) {

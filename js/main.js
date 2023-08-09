@@ -108,16 +108,16 @@ if (window.counterUp) {
 }
 
 // Animações para aparecer o elemento
-AOS.init({
-  once: true,
-});
+// AOS.init({
+//   once: true,
+// });
 
-window.addEventListener(
-  "scroll",
-  debounce(() => {
-    AOS.refresh();
-  }, 200)
-);
+// window.addEventListener(
+//   "scroll",
+//   debounce(() => {
+//     AOS.refresh();
+//   }, 200)
+// );
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const accordionLink = document.getElementById("accordion-link");
