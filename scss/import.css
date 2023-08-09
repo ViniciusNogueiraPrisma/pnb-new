@@ -8625,7 +8625,7 @@ input[type=checkbox].switch:disabled:not(:checked):after {
   .infos-contato-last {
     display: block;
     background-color: #002e5f;
-    padding: 100px 42px 40px 100px;
+    padding: 40px 20px 15px 20px;
   }
   .infos-contato-last span {
     color: #eeeeee;
