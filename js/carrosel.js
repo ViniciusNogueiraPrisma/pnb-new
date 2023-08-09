@@ -90,6 +90,20 @@ var swiperAval = new Swiper(".mySwiper-avaliacao", {
   },
 });
 
+var swiperAvalQs = new Swiper(".mySwiper-avaliacao-qs", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // function checkWindowSizeAval() {
 //   if (window.innerWidth <= 1200) {
 //     swiperAval.params.slidesPerView = 1;

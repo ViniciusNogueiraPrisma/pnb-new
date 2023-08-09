@@ -7676,19 +7676,12 @@ p {
   gap: 5px;
 }
 
-.img-quem-somos {
-  background-image: url("../../images/new-images/banner-qs.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 50%;
-  padding-top: 0;
-  padding-bottom: 0;
-  z-index: 1;
-  height: 64.73822vh;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: auto;
+#vector-img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  transform: translateY(0%);
+  margin-left: 100px; /* Espaço da direita */
 }
 
 .cards-home-qs {
