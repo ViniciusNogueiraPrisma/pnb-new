@@ -4204,8 +4204,8 @@ footer {
 }
 
 #section-produtos {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .direitos-footer span {
@@ -5876,7 +5876,8 @@ footer {
 }
 
 .swiper-hover-div:hover .swiper-content {
-  padding: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
   transition: 0.5s ease;
 }
 
@@ -6048,6 +6049,7 @@ footer {
 
 .content-text-carrosel {
   width: 50%;
+  padding-left: 20px;
 }
 
 .content-text-carrosel h1 {
