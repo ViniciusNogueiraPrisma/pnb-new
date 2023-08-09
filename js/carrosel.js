@@ -11,6 +11,32 @@ let swiperHome = new Swiper(".mySwiper", {
   },
 });
 
+var swiper = new Swiper(".mySwiper-carrosel-cards-qs", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-carrosel-h",
+    clickable: true,
+  },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide-qs", {
+    type: "loop", // Pode ser 'loop', 'fade', etc.
+    perPage: 1, // Quantidade de slides visíveis
+    // autoplay: true,   // Ativar reprodução automática
+    // interval: 2000,
+    focus: "center",
+    arrows: false,
+    rewind: true, // Intervalo entre slides em milissegundos
+    pagination: true, // Ocultar paginação (pontos indicando o slide atual)
+  }).mount();
+});
+
 let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -23,6 +49,25 @@ let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
     clickable: true,
   },
 });
+
+function checkWindowSizeQs() {
+  if (window.innerWidth <= 1000) {
+    swiperQuemSomos.params.slidesPerView = 2;
+  } else {
+    swiperQuemSomos.params.slidesPerView = 3;
+  }
+
+  if (window.innerWidth <= 780) {
+    swiperQuemSomos.params.slidesPerView = 1;
+  } else {
+    swiperQuemSomos.params.slidesPerView = 2;
+  }
+
+  swiperQuemSomos.update();
+}
+
+checkWindowSizeQs();
+window.addEventListener("resize", checkWindowSizeQs);
 
 function checkWindowSize() {
   if (window.innerWidth <= 1200) {
@@ -90,19 +135,19 @@ var swiperAval = new Swiper(".mySwiper-avaliacao", {
   },
 });
 
-var swiperAvalQs = new Swiper(".mySwiper-avaliacao-qs", {
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 24,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiperAvalQs = new Swiper(".mySwiper-avaliacao-qs", {
+//   slidesPerView: "auto",
+//   centeredSlides: true,
+//   spaceBetween: 24,
+//   autoplay: {
+//     delay: 2000,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     // el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
 // function checkWindowSizeAval() {
 //   if (window.innerWidth <= 1200) {
@@ -236,18 +281,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: true, // Ocultar paginação (pontos indicando o slide atual)
   }).mount();
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   new Splide('.splide-last', {
-//     type: 'loop',    // Pode ser 'loop', 'fade', etc.
-//     perPage: 1,       // Quantidade de slides visíveis
-//     autoplay: true,   // Ativar reprodução automática
-//     interval: 2000,
-//     focus: 'center',
-//     rewind: true,   // Intervalo entre slides em milissegundos
-//     pagination: true // Ocultar paginação (pontos indicando o slide atual)
-//   }).mount();
-// });
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");

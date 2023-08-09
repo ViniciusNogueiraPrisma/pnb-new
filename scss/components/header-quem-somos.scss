@@ -12,6 +12,48 @@
   // padding-right: 222px;
 }
 
+.img-header-qs {
+  padding-right: 72px;
+  display: flex;
+}
+
+#img-header-qs-ceo {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#vector-header-qs {
+  z-index: -1;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.depoimentos-qs-title {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding-left: 72px;
+
+  span {
+    // Depoimentos
+    color: #002e5f;
+    font-size: 40px;
+    font-family: "PT Serif";
+    font-weight: 400;
+    line-height: 44px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // dos nossos clientes
+    color: #002e5f;
+    font-size: 40px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 44px;
+    word-wrap: break-word;
+  }
+}
+
 .nav-texts-menu a {
   text-decoration: none;
   color: #1d1d1d;
@@ -79,24 +121,53 @@
   gap: 5px;
 }
 
-.img-quem-somos {
-  height: 654px;
-  // background-image: url("../../images/new-images/banner-qs.png");
-  // object-fit: cover;
-  // background-repeat: no-repeat;
-  // background-position: right center;
-  // background-size: 50%;
-  // padding-top: 0;
-  // padding-bottom: 0;
+.infos-img-header-qs {
+  // border: 1px solid red;
+  position: absolute;
+  background-color: #01518c;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 245px;
 
-  // z-index: 1;
-  // // height: 666px;
+  margin-top: 430px;
+  margin-left: -40px;
+
+  h4 {
+    // Wilson Neto
+
+    color: white;
+    font-size: 21px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // CEO, Trader
+    color: #dddddd;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+}
+
+.img-quem-somos {
+  // height: 100%;
+  margin-bottom: -52px;
+  // background-image: url("../../images/new-images/Vector\ 1.png");
+  // object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: right 10% center;
+
+  z-index: -1;
+  // height: 666px;
   // height: 64.73822vh;
-  // align-items: center;
-  // justify-content: center;
-  // display: flex;
-  // width: auto;
-  padding-bottom: 0;
 }
 
 #vector-img {
@@ -133,7 +204,7 @@
 .container-quem-somos {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 100px;
 }
 .conheca-title-card-qs {
   padding-left: 72px;
@@ -201,7 +272,7 @@
   padding-left: 72px;
   padding-bottom: 64px;
   width: 50%;
-  margin-top: 80px;
+  margin-top: -50px;
 
   h1 {
     color: #002e5f;
@@ -331,15 +402,11 @@
 }
 
 .video-quem-somos {
-}
-
-.video-quem-somos {
   position: relative;
   width: 100%;
   height: 300px; /* Altura fixa de 300px */
   overflow: hidden;
   margin-top: 112px;
-  margin-bottom: 80px;
 }
 
 /* Estilos para o vídeo dentro do contêiner */
@@ -575,6 +642,7 @@
 
 .contato-pnb {
   display: flex;
+  margin-top: 112px;
   gap: 40px;
   margin-bottom: 64px;
 }
@@ -710,6 +778,21 @@
   gap: 40px;
 }
 
+.cards-home-carrosel {
+  display: none;
+}
+
+.mySwiper-carrosel-cards-qs {
+  display: none;
+}
+
+.mySwiper-carrosel-cards-qs {
+  padding-top: 56px;
+  padding-left: 40px;
+  padding-right: 56px;
+  padding-bottom: 50px;
+}
+
 .img-econo span {
   width: 100%;
   // Fonte de dados:
@@ -753,5 +836,27 @@
   .infos-content-banner-qs {
     flex-direction: column;
     gap: 50px;
+  }
+}
+
+@media (max-width: 857px) {
+  .cards-home-qs {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 610px) {
+  .cards-home-qs {
+    display: none;
+  }
+
+  .mySwiper-carrosel-cards-qs {
+    display: block;
+  }
+}
+
+@media(max-width: 750px) {
+  .title-card-content-qs {
+    flex-direction: column;
   }
 }
