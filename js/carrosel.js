@@ -11,6 +11,19 @@ let swiperHome = new Swiper(".mySwiper", {
   },
 });
 
+let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: true,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 function checkWindowSize() {
   if (window.innerWidth <= 1200) {
     swiperHome.params.slidesPerView = 1;
@@ -246,8 +259,6 @@ function showDiv(showElement, hideElement, showLink, hideLink) {
   showLink.classList.add("active-border");
   hideLink.classList.remove("active-border");
 }
-
-
 
 $(document).ready(function () {
   $("#voltar-ao-topo").click(function (event) {

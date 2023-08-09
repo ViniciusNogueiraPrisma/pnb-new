@@ -7676,6 +7676,149 @@ p {
   gap: 5px;
 }
 
+.img-quem-somos {
+  background-image: url("../../images/new-images/banner-qs.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 1;
+  height: 64.73822vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: auto;
+}
+
+.cards-home-qs {
+  padding-top: 80px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.card-content-qs {
+  background-color: white;
+}
+
+.conheca-time-qs {
+  background-color: #e8e8e8;
+  height: auto;
+  margin-top: -2.246073vh;
+  z-index: 1;
+}
+
+.container-quem-somos {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.conheca-title-card-qs {
+  padding-left: 72px;
+  width: 40%;
+}
+
+.infos-text-conheca-qs {
+  padding-right: 72px;
+  width: 60%;
+}
+
+.carrosel-quem-somos {
+  margin-top: 64px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.infos-text-conheca-qs span {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.infos-text-conheca-qs h4 {
+  margin-top: 24px;
+  color: #0160a6;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.conheca-title-card-qs h1 {
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+  margin-bottom: -20px;
+}
+
+.conheca-title-card-qs span {
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.title-card-content-qs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content-qs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 72px;
+  width: 50%;
+}
+.text-content-qs h1 {
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+  margin-bottom: 24px;
+}
+.text-content-qs span {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  margin-bottom: 24px;
+}
+.text-content-qs h4 {
+  color: #0160a6;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.text-img-content-qs img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  height: 666px;
+}
+
 .header-language a {
   text-decoration: none;
 }
@@ -7753,6 +7896,32 @@ p {
 .content-qs {
   background-color: #fff;
   height: 666px;
+}
+
+.video-quem-somos {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Altura fixa de 300px */
+  overflow: hidden;
+  margin-top: 112px;
+  margin-bottom: 80px;
+}
+
+/* Estilos para o vídeo dentro do contêiner */
+#video-quem-somos-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura ocupa a tela inteira */
+  height: 100%; /* Altura ocupa o espaço do contêiner */
+  object-fit: cover; /* Mantém a proporção e preenche o contêiner */
+}
+
+.video-quem-somos iframe {
+  height: 300px;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
 }
 
 .img-txt-qs {
