@@ -115,3 +115,35 @@
 .btn-join span {
   margin-right: 10px;
 }
+
+@media (max-width: 1000px) {
+  .content-cursos-infos-pnb {
+    flex-direction: column-reverse;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .content-texts-cursos {
+    padding-top: 5px;
+    width: 65%;
+  }
+
+  .content-cursos-infos-pnb > .content-img-cursos img {
+    border-radius: 4px;
+    height: 250px;
+    width: 634px;
+    object-fit: cover;
+  }
+
+  .content-texts-cursos h1 {
+    margin-top: 16px;
+  }
+
+  .content-texts-cursos h5 {
+    margin-top: 16px;
+  }
+
+  .btns-content-text-cursos {
+    margin-top: 24px;
+  }
+}

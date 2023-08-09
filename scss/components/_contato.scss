@@ -472,7 +472,7 @@ input[type="checkbox"] {
     display: flex;
   }
 
-  input[type=checkbox]:not(.switch) {
+  input[type="checkbox"]:not(.switch) {
     padding-left: 20px;
   }
 }
