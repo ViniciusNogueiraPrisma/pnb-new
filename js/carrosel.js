@@ -201,9 +201,10 @@ document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {
     type: 'loop',    // Pode ser 'loop', 'fade', etc.
     perPage: 1,       // Quantidade de slides visíveis
-    autoplay: true,   // Ativar reprodução automática
-    interval: 2000,
+    // autoplay: true,   // Ativar reprodução automática
+    // interval: 2000,
     focus: 'center',
+    arrows: false,
     rewind: true,   // Intervalo entre slides em milissegundos
     pagination: true // Ocultar paginação (pontos indicando o slide atual)
   }).mount();

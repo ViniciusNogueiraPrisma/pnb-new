@@ -381,6 +381,20 @@ footer {
   margin-bottom: 30px;
 }
 
+.splide__pagination {
+  margin-bottom: -47px;
+}
+
+.splide__pagination__page {
+  // border: 1px solid #ffffff;
+  height: 3px;
+  // background-color: #ffffff;
+  width: 30px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+
 // * {
 //   border: 1px solid red;
 // }
