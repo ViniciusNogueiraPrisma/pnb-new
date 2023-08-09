@@ -7486,6 +7486,10 @@ p {
   }
 }
 @media (max-width: 560px) {
+  #section-duvida {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .sobre-pnb {
     padding-left: 10px;
     padding-right: 10px;
