@@ -8606,8 +8606,8 @@ input[type=checkbox].switch:disabled:not(:checked):after {
     width: 100%;
   }
   .container-contato {
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .btns-form {
     display: flex;
