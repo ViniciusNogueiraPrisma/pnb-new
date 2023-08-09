@@ -8117,7 +8117,10 @@ p {
 
 .content-cursos-infos-pnb {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 72px;
   gap: 24px;
   margin-bottom: 40px;
 }
@@ -8125,6 +8128,10 @@ p {
 .content-texts-cursos {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.content-2 {
+  background-color: #f7f7f7;
 }
 
 .content-texts-cursos a {
@@ -8142,7 +8149,7 @@ p {
 
 .content-texts-cursos {
   align-items: center;
-  width: 50%;
+  width: 40%;
 }
 
 .content-texts-cursos h1 {
