@@ -85,14 +85,15 @@ nav {
   display: flex;
   justify-content: center;
   // margin-top: 10.319917440660475vh;
-  margin-top: 140px;
+  margin-top: 14.659685863874346vh;
+  // margin-top: 140px;
 }
 
 .header-txts {
   position: absolute;
   // margin-left: 46.43962848297214vh;
   margin-left: 510px;
-  margin-top: 100px;
+  // margin-top: 100px;
 }
 
 .header-txts h3 {
@@ -273,7 +274,8 @@ nav {
 
 .header {
   transition: 0.2s;
-  height: 928px;
+  // height: 928px;
+  height: 97.17277486910994vh;
   background-image: url("../../images/new-images/Home/banner_home_04.jpg");
   padding: 16px 0 0;
   background-color: rgb(220, 220, 220);
@@ -966,8 +968,6 @@ nav {
     margin-left: -94px;
   }
 }
-
-
 
 @media (max-width: 1228px) {
   nav {

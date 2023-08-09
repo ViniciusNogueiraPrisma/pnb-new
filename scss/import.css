@@ -664,13 +664,12 @@ nav {
 .header-content {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 14.6596858639vh;
 }
 
 .header-txts {
   position: absolute;
   margin-left: 510px;
-  margin-top: 100px;
 }
 
 .header-txts h3 {
@@ -843,7 +842,7 @@ nav {
 
 .header {
   transition: 0.2s;
-  height: 928px;
+  height: 97.1727748691vh;
   background-image: url("../../images/new-images/Home/banner_home_04.jpg");
   padding: 16px 0 0;
   background-color: rgb(220, 220, 220);
