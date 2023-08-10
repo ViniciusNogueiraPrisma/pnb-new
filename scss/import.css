@@ -7833,6 +7833,10 @@ p {
   position: absolute;
 }
 
+.quem-somos-carrosel-last {
+  display: none;
+}
+
 .depoimentos-qs-title {
   margin-top: 80px;
   margin-bottom: 40px;
@@ -8681,6 +8685,9 @@ p {
 @media (max-width: 1110px) {
   #splide-quem-somos-clientes {
     display: none;
+  }
+  .quem-somos-carrosel-last {
+    display: block;
   }
   .splide-qs-last {
     display: block;
