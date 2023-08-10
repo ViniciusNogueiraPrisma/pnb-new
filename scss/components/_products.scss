@@ -404,8 +404,35 @@
 }
 
 .title-promos-produtos-ns {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  text-align: center;
   padding-bottom: 16px;
   border-bottom: 2px solid gray;
+}
+
+@media (max-width: 911px) {
+  .title-promos-produtos-ns {
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 710px) {
+  .title-promos-produtos-ns {
+    grid-template-columns: auto;
+    text-align: start;
+  }
+  .apenas-infos-valores-promos {
+    flex-direction: column;
+    align-items: baseline !important;
+  }
+
+  .apenas-infos-valores-promos h5 {
+    margin-top: -34px;
+    margin-bottom: -53px;
+  }
 }
 
 .title-promos-produtos-ns a {
@@ -422,9 +449,9 @@
   word-wrap: break-word;
 }
 
-.margin-items-promos {
-  margin-left: 16px;
-}
+// .margin-items-promos {
+//   margin-left: 16px;
+// }
 
 .card-promos-produtos-ns {
   margin-top: 40px;
@@ -519,6 +546,10 @@
   font-weight: 400;
   line-height: 44px;
   word-wrap: break-word;
+}
+
+.line-th {
+  text-decoration: line-through 3px black;
 }
 
 .apenas-infos-valores-promos {
@@ -807,15 +838,15 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
 }
 
 #middle-icon-timeline {
-  margin-top: 25px;
+  margin-top: 36px;
 }
 
 #last-icon-timeline {
-  margin-top: 10px;
+  margin-top: 23px;
 }
 
 .line-card-infos-promos {
-  margin-top: -120px;
+  margin-top: -79px;
 }
 
 $bg: #fff;
@@ -1222,11 +1253,38 @@ $blue: #03b5d2;
   }
 }
 
+@media (max-width: 583px) {
+  .content-bandeiras-valores {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .bandeiras-valores-promos span {
+    width: 100%;
+    display: flex;
+  }
+
+  .container-quadros-np {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .card-infos-promos {
+    padding: 20px 24px 20px 10px;
+  }
+
+  .timeline .timeline-container .timeline-body h2 {
+    margin-left: -24px;
+    padding-right: 20px;
+    font-size: 19px;
+  }
+}
+
 @media (max-width: 1200px) {
   .card-promos-produtos-ns {
     flex-direction: column;
   }
-  
+
   .card-valores-promos {
     width: 100%;
   }
@@ -1247,7 +1305,7 @@ $blue: #03b5d2;
     margin-top: 10px;
   }
   #middle-icon-timeline {
-    margin-top: 9px;
+    margin-top: 6px;
   }
 
   .timeline:before {
@@ -1258,7 +1316,7 @@ $blue: #03b5d2;
   .card-infos-promos h5 {
     padding-left: 20px;
   }
-  
+
   .line-card-infos-promos {
     margin-top: 0px;
   }

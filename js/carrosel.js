@@ -11,6 +11,64 @@ let swiperHome = new Swiper(".mySwiper", {
   },
 });
 
+var swiperFooter = new Swiper(".mySwiper-footer", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: false,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-footer",
+    clickable: true,
+  },
+});
+
+var swiperAval = new Swiper(".mySwiper-avaliacao", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    type: "loop", // Pode ser 'loop', 'fade', etc.
+    perPage: 1, // Quantidade de slides visíveis
+    // autoplay: true,   // Ativar reprodução automática
+    // interval: 2000,
+    focus: "center",
+    arrows: false,
+    rewind: true, // Intervalo entre slides em milissegundos
+    pagination: true, // Ocultar paginação (pontos indicando o slide atual)
+  }).mount();
+});
+
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const div1 = document.getElementById("div1");
+const div2 = document.getElementById("div2");
+
+// Adicionar ouvintes de evento para os links
+link1.addEventListener("click", (event) => {
+  event.preventDefault(); // Impede o comportamento padrão do link
+  showDiv(div1, div2, link1, link2);
+});
+
+link2.addEventListener("click", (event) => {
+  event.preventDefault(); // Impede o comportamento padrão do link
+  showDiv(div2, div1, link2, link1);
+});
+
 function checkWindowSizeHome() {
   if (window.innerWidth <= 1000) {
     swiperHome.params.slidesPerView = 1;
@@ -69,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 });
 
-
 let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -83,24 +140,24 @@ let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
   },
 });
 
-function checkWindowSizeQs() {
-  if (window.innerWidth <= 1000) {
-    swiperQuemSomos.params.slidesPerView = 2;
-  } else {
-    swiperQuemSomos.params.slidesPerView = 3;
-  }
+// function checkWindowSizeQs() {
+//   if (window.innerWidth <= 1000) {
+//     swiperQuemSomos.params.slidesPerView = 2;
+//   } else {
+//     swiperQuemSomos.params.slidesPerView = 3;
+//   }
 
-  if (window.innerWidth <= 850) {
-    swiperQuemSomos.params.slidesPerView = 1;
-  } else {
-    swiperQuemSomos.params.slidesPerView = 2;
-  }
+//   if (window.innerWidth <= 850) {
+//     swiperQuemSomos.params.slidesPerView = 1;
+//   } else {
+//     swiperQuemSomos.params.slidesPerView = 2;
+//   }
 
-  swiperQuemSomos.update();
-}
+//   swiperQuemSomos.update();
+// }
 
-checkWindowSizeQs();
-window.addEventListener("resize", checkWindowSizeQs);
+// checkWindowSizeQs();
+// window.addEventListener("resize", checkWindowSizeQs);
 
 function checkWindowSize() {
   if (window.innerWidth <= 1200) {
@@ -154,26 +211,31 @@ var swiperProdutos = new Swiper(".mySwiper-carrosel-produtos", {
   },
 });
 
+function checkWindowSizeProdutos() {
+  if (window.innerWidth < 993) {
+    swiperProdutos.params.slidesPerView = 2;
+  } else {
+    swiperProdutos.params.slidesPerView = 3;
+  }
+
+  if (window.innerWidth < 767) {
+    swiperProdutos.params.slidesPerView = 1;
+  } else {
+    swiperProdutos.params.slidesPerView = 2;
+  }
+
+  swiperProdutos.update();
+}
+
+checkWindowSizeProdutos();
+window.addEventListener("resize", checkWindowSizeProdutos);
+
 var swiperCursos = new Swiper(".mySwiper-carrosel-cursos", {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 10,
   autoplay: {
     delay: 1500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-var swiperAval = new Swiper(".mySwiper-avaliacao", {
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 24,
-  autoplay: {
-    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -209,21 +271,6 @@ var swiperAval = new Swiper(".mySwiper-avaliacao", {
 // checkWindowSizeAval();
 // window.addEventListener("resize", checkWindowSizeAval);
 
-var swiperFooter = new Swiper(".mySwiper-footer", {
-  slidesPerView: 1,
-  spaceBetween: 24,
-  loop: false,
-
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
-  pagination: {
-    el: ".swiper-pagination-footer",
-    clickable: true,
-  },
-});
-
 // function checkWindowSizeFooter() {
 //   if (window.innerWidth <= 600) {
 //     swiperFooter.params.slidesPerView = 1;
@@ -249,25 +296,6 @@ var swiperFooter = new Swiper(".mySwiper-footer", {
 
 // checkWindowSizeFooter();
 // window.addEventListener("resize", checkWindowSizeFooter);
-
-function checkWindowSizeProdutos() {
-  if (window.innerWidth < 993) {
-    swiperProdutos.params.slidesPerView = 2;
-  } else {
-    swiperProdutos.params.slidesPerView = 3;
-  }
-
-  if (window.innerWidth < 767) {
-    swiperProdutos.params.slidesPerView = 1;
-  } else {
-    swiperProdutos.params.slidesPerView = 2;
-  }
-
-  swiperProdutos.update();
-}
-
-checkWindowSizeProdutos();
-window.addEventListener("resize", checkWindowSizeProdutos);
 
 var swiperEquipe = new Swiper(".mySwiperEquipe", {
   slidesPerView: 3,
@@ -315,35 +343,6 @@ var swiper = new Swiper(".myPNB", {
 //     rtl: true
 //   });
 // });
-
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".splide", {
-    type: "loop", // Pode ser 'loop', 'fade', etc.
-    perPage: 1, // Quantidade de slides visíveis
-    // autoplay: true,   // Ativar reprodução automática
-    // interval: 2000,
-    focus: "center",
-    arrows: false,
-    rewind: true, // Intervalo entre slides em milissegundos
-    pagination: true, // Ocultar paginação (pontos indicando o slide atual)
-  }).mount();
-});
-
-const link1 = document.getElementById("link1");
-const link2 = document.getElementById("link2");
-const div1 = document.getElementById("div1");
-const div2 = document.getElementById("div2");
-
-// Adicionar ouvintes de evento para os links
-link1.addEventListener("click", (event) => {
-  event.preventDefault(); // Impede o comportamento padrão do link
-  showDiv(div1, div2, link1, link2);
-});
-
-link2.addEventListener("click", (event) => {
-  event.preventDefault(); // Impede o comportamento padrão do link
-  showDiv(div2, div1, link2, link1);
-});
 
 // Função para mostrar a div correta e aplicar a classe "active-border"
 function showDiv(showElement, hideElement, showLink, hideLink) {
