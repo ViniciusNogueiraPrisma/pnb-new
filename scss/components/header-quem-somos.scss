@@ -1046,13 +1046,19 @@
 
 @media (max-width: 406px) {
   .contato-pnb {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-conheca-time-qs {
+    // border: 1px solid red;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   .texts-banner-ceo {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   .depoimentos-qs-title {
