@@ -7304,7 +7304,7 @@ footer {
     margin-bottom: 80px;
   }
   .accordion button .accordion-title {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 @media (max-width: 347px) {
@@ -7331,6 +7331,8 @@ footer {
   }
   .container-faq-ns {
     padding-top: 54px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
   .container-carrosel {
     padding-left: 40px;
