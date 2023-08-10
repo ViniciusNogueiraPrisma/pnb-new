@@ -1180,6 +1180,16 @@ $blue: #03b5d2;
     gap: 24px;
   }
 
+  .infos-content-banner-np {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .owner-data-qs {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
   .card-anunc-valores-promos span {
     width: 100%;
     text-align: center;
@@ -1403,5 +1413,6 @@ $blue: #03b5d2;
 
     height: 100%;
     object-fit: cover;
+    object-position: top;
   }
 }

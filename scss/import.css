@@ -7286,6 +7286,14 @@ footer {
     align-items: center;
     gap: 24px;
   }
+  .infos-content-banner-np {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .owner-data-qs {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
   .card-anunc-valores-promos span {
     width: 100%;
     text-align: center;
@@ -7457,6 +7465,7 @@ footer {
     position: relative;
     height: 100%;
     object-fit: cover;
+    object-position: top;
   }
 }
 .sobre-pnb {
@@ -7772,8 +7781,12 @@ p {
 }
 @media (max-width: 560px) {
   #section-duvida {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content-pnb {
+    padding-left: 0;
+    padding-right: 0;
   }
   .sobre-pnb {
     padding-left: 10px;

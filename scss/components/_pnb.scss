@@ -469,8 +469,13 @@ p {
 @media (max-width: 560px) {
 
   #section-duvida {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-pnb {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .sobre-pnb {
