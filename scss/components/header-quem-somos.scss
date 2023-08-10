@@ -163,20 +163,61 @@
 }
 
 .img-quem-somos {
-  // border: 1px solid red;
   padding: 0;
-  // height: 100%;
-  // margin-bottom: -52px;
-  // background-image: url("../../images/new-images/Vector\ 1.png");
-  // object-fit: cover;
-  // background-repeat: no-repeat;
-  // background-position: right 10% center;
-  // justify-content: space-between;
-  // display: flex;
+  background-image: url("../../images/new-images/Vector\ 1.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: local;
+  position: relative;
+}
 
-  // z-index: -1;
-  // height: 666px;
-  // height: 64.73822vh;
+@media (max-width: 1100px) {
+  .img-quem-somos {
+    background-image: url("");
+  }
+
+  #image-w-ceo {
+    margin-left: 73px;
+    border-radius: 4px;
+    height: 600px !important;
+  }
+
+  .image-text-banner-ceo {
+    margin-left: 47px !important;
+  }
+
+  .container-banner-ceo {
+    gap: 0px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-banner-ceo {
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .texts-banner-ceo {
+    width: 100% !important;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-bottom: 30px !important;
+  }
+
+  .image-banner-ceo {
+    width: 100% !important;
+  }
+
+  .image-text-banner-ceo {
+    width: 245px !important;
+    margin-bottom: 50px !important;
+  }
+
+  #image-w-ceo {
+    margin-left: 0;
+  }
 }
 
 #vector-img {
@@ -203,22 +244,20 @@
 }
 
 #image-w-ceo {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .container-banner-ceo {
   margin-top: 80px;
   gap: 50px;
-
-  // border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 72px;
 
-  background-image: url("../../images/new-images/vector-content.png");
+  // background-image: url("../../images/new-images/vector-content.png");
   background-repeat: no-repeat;
   background-position: right center;
   // z-index: -9999;
@@ -226,12 +265,13 @@
 
 .image-text-banner-ceo {
   position: absolute;
-  margin-top: 450px;
+  // margin-top: 450px;
   margin-left: -40px;
   border-radius: 4px;
   width: auto;
   height: auto;
   object-fit: cover;
+  margin-bottom: 20px;
 
   background-color: #01518c;
   padding-top: 16px;
@@ -266,25 +306,24 @@
 .texts-banner-ceo {
   width: 50%;
   margin: auto;
+  background-color: white;
 
   // margin-left: 8%;
   // border: 1px solid red;
   // border: 1px solid red;
   z-index: 1;
+  position: relative;
 
   h1 {
-    // A GESTÃO DE RISCO é um dos nossos principais pilares operacionais.
-    color: #0160a6;
-    font-size: 16px;
-    font-family: "Roboto";
-    font-weight: 700;
-    line-height: 25.6px;
+    color: #002e5f;
+    font-size: 34px;
+    font-family: "PT Serif";
+    font-weight: 400;
+    line-height: 44.88px;
     word-wrap: break-word;
-    margin-bottom: 24px;
   }
 
   h5 {
-    // Comunidade, formada pelo analista técnico Wilson Neto, para quem opera DAY TRADE no Mercado de Renda Variável utilizando a técnica de Leitura de Fluxo.
     color: #666666;
     font-size: 16px;
     font-family: "Roboto";
@@ -308,6 +347,10 @@
 .image-banner-ceo {
   width: 50%;
   display: flex;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
   // border: 1px solid red;
 }
 
@@ -816,9 +859,11 @@
   display: flex;
 }
 
-// #sobre-banner-ceo {
-
-// }
+#sobre-banner-ceo {
+  position: absolute;
+  z-index: -1;
+  margin-left: 20px;
+}
 
 .box-contatos-pnb a {
   width: 100%;
@@ -985,10 +1030,21 @@
   }
 }
 
+@media(max-width: 323px) {
+  .image-text-banner-ceo {
+    width: auto !important;
+  }
+}
+
 @media (max-width: 406px) {
   .contato-pnb {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .texts-banner-ceo {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 
   .depoimentos-qs-title {
@@ -1037,10 +1093,6 @@
   // .infos-banner-qs {
   //   margin-top: -47.998962vh;
   // }
-
-  .card-content-slide {
-    background-color: #000000 !important;
-  }
 
   .infos-content-banner-qs {
     flex-direction: column;

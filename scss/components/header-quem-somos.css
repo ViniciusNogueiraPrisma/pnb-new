@@ -20,8 +20,7 @@
   padding-right: 72px;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #vector-header-qs {
@@ -136,8 +135,53 @@
 
 .img-quem-somos {
   padding: 0;
+  background-image: url("../../images/new-images/Vector 1.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: local;
+  position: relative;
 }
 
+@media (max-width: 1100px) {
+  .img-quem-somos {
+    background-image: url("");
+  }
+  #image-w-ceo {
+    margin-left: 73px;
+    border-radius: 4px;
+    height: 600px !important;
+  }
+  .image-text-banner-ceo {
+    margin-left: 47px !important;
+  }
+  .container-banner-ceo {
+    gap: 0px !important;
+  }
+}
+@media (max-width: 800px) {
+  .container-banner-ceo {
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .texts-banner-ceo {
+    width: 100% !important;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-bottom: 30px !important;
+  }
+  .image-banner-ceo {
+    width: 100% !important;
+  }
+  .image-text-banner-ceo {
+    width: 245px !important;
+    margin-bottom: 50px !important;
+  }
+  #image-w-ceo {
+    margin-left: 0;
+  }
+}
 #vector-img {
   position: absolute;
   z-index: -1;
@@ -162,10 +206,9 @@
 }
 
 #image-w-ceo {
-  width: auto;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-banner-ceo {
@@ -175,20 +218,18 @@
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 72px;
-  background-image: url("../../images/new-images/vector-content.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
 
 .image-text-banner-ceo {
   position: absolute;
-  margin-top: 450px;
   margin-left: -40px;
   border-radius: 4px;
   width: auto;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 20px;
   background-color: #01518c;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -218,16 +259,17 @@
 .texts-banner-ceo {
   width: 50%;
   margin: auto;
+  background-color: white;
   z-index: 1;
+  position: relative;
 }
 .texts-banner-ceo h1 {
-  color: #0160a6;
-  font-size: 16px;
-  font-family: "Roboto";
-  font-weight: 700;
-  line-height: 25.6px;
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
   word-wrap: break-word;
-  margin-bottom: 24px;
 }
 .texts-banner-ceo h5 {
   color: #666666;
@@ -250,6 +292,9 @@
 .image-banner-ceo {
   width: 50%;
   display: flex;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
 }
 
 .conheca-time-qs {
@@ -350,8 +395,7 @@
 }
 
 .text-img-content-qs img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   width: 900px;
   margin-left: -600px;
@@ -388,8 +432,7 @@
   height: 65.0154798762vh;
   filter: brightness(40%);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .infos-banner-qs {
@@ -453,15 +496,13 @@
   left: 0;
   width: 100%; /* Largura ocupa a tela inteira */
   height: 100%; /* Altura ocupa o espaço do contêiner */
-  -o-object-fit: cover;
-     object-fit: cover; /* Mantém a proporção e preenche o contêiner */
+  object-fit: cover; /* Mantém a proporção e preenche o contêiner */
 }
 
 .video-quem-somos iframe {
   height: 300px;
   background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100vw;
 }
 
@@ -723,6 +764,12 @@
   display: flex;
 }
 
+#sobre-banner-ceo {
+  position: absolute;
+  z-index: -1;
+  margin-left: 20px;
+}
+
 .box-contatos-pnb a {
   width: 100%;
   padding: 20px;
@@ -871,10 +918,19 @@
     flex-direction: column;
   }
 }
+@media (max-width: 323px) {
+  .image-text-banner-ceo {
+    width: auto !important;
+  }
+}
 @media (max-width: 406px) {
   .contato-pnb {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .texts-banner-ceo {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
   .depoimentos-qs-title {
     padding-left: 40px;
@@ -911,9 +967,6 @@
   }
 }
 @media (max-width: 600px) {
-  .card-content-slide {
-    background-color: #000000 !important;
-  }
   .infos-content-banner-qs {
     flex-direction: column;
     gap: 50px;
@@ -936,4 +989,6 @@
   .title-card-content-qs {
     flex-direction: column;
   }
-}/*# sourceMappingURL=header-quem-somos.css.map */
+}
+
+/*# sourceMappingURL=header-quem-somos.css.map */
