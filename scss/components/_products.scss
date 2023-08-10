@@ -462,7 +462,7 @@
 
 .card-valores-promos {
   width: 60%;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 
   padding: 43px 40px 64px;
 
@@ -616,7 +616,29 @@
 }
 
 .content-bandeiras-valores img {
-  height: 20px;
+  height: 17px;
+}
+
+@media (max-width: 819px) {
+  #last-icon-timeline {
+    margin-top: 18px !important;
+  }
+
+  #middle-icon-timeline {
+    margin-top: 16px !important;
+  }
+}
+
+@media (max-width: 424px) {
+  .timeline:before {
+    height: 85% !important;
+  }
+}
+
+@media (max-width: 373px) {
+  .timeline:before {
+    height: 81% !important;
+  }
 }
 
 .card-infos-promos h5 {
@@ -1150,6 +1172,20 @@ $blue: #03b5d2;
   }
 }
 
+@media (max-width: 520px) {
+  .card-anunc-valores-promos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .card-anunc-valores-promos span {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 445px) {
   .swiper-content {
     margin-bottom: 80px;
@@ -1186,6 +1222,10 @@ $blue: #03b5d2;
     padding-right: 40px;
   }
 
+  .container-faq-ns {
+    padding-top: 54px !important;
+  }
+
   .container-carrosel {
     padding-left: 40px;
     padding-right: 40px;
@@ -1194,6 +1234,14 @@ $blue: #03b5d2;
   .container-infos {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .apenas-infos-valores-promos h3 {
+    font-size: 36px;
+  }
+
+  .line-th {
+    font-size: 36px !important;
   }
 
   .header-txts {
