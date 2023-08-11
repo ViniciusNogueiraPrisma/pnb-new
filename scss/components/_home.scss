@@ -18,6 +18,10 @@
 }
 
 .dropdown-menu-pnb {
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   cursor: pointer;
   position: relative;
@@ -25,7 +29,8 @@
 }
 
 .dropdown-menu-hover-pnb {
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: #002e5f;
   // list-style-type: none;
   margin: 0;
   padding: 0;
@@ -45,23 +50,38 @@
 .dropdown-menu-hover-pnb a {
   color: #000;
   display: inline-block;
-  width: 100%;
+  width: auto;
   text-decoration: none;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .dropdown-menu-hover-pnb a:hover {
-  background: #ba68c8;
+  // background: #ba68c8;
   color: #fff;
+}
+
+.dropdown-menu-hover-pnb li:hover {
+  background-color: #1d4a79;
+  border-top: 1px solid rgb(83, 96, 156);
+}
+
+.dropdown-menu-pnb a {
+  color: white;
+  font-size: 16px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
 }
 
 .dropdown-menu-pnb:hover .dropdown-menu-hover-pnb {
   // background: #7b1fa2;
+  background-color: #002e5f;
   opacity: 1;
   visibility: visible;
   top: 100%;
-  width: 100%;
+  width: 230px;
   -webkit-transition: all 0.5s, background, 2s 0.5s linear;
   transition: all 0.5s, background 2s 0.5s linear;
 }
@@ -176,21 +196,7 @@
   max-width: 1250px !important;
 }
 
-// .nav-texts-menu {
-//   display: flex;
-//   width: 100%;
-// }
-
-// .nav-texts-menu a::after {
-//   content: "";
-//   display: block;
-//   width: 0;
-//   height: 2px;
-//   background: #000;
-//   transition: width 0.3s;
-// }
-
-.nav-texts a::after {
+.nav-texts .link-dropdown::after {
   content: "";
   display: block;
   width: 0;
@@ -199,14 +205,13 @@
   transition: width 0.3s;
 }
 
-// .border-right-to-left:hover {
-//   background: linear-gradient(to left, transparent 70%, #000 70%);
-//   background-size: 100% 3px;
-//   background-repeat: no-repeat;
-// }
-
 .active-border {
   border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.icons-menu-pnb {
+  // border: 1px solid red;
+  display: flex;
 }
 
 .texts-home button {
