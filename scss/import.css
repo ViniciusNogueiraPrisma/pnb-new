@@ -775,6 +775,7 @@ nav {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  border-radius: 4px;
   align-items: center;
   height: 95px;
   padding-left: 72px;
@@ -1525,6 +1526,7 @@ nav {
   }
   .content-main {
     max-width: 100%;
+    border-radius: 0px;
   }
   .content-text {
     align-items: center;
