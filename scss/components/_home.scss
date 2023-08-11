@@ -17,6 +17,55 @@
   background: none;
 }
 
+.dropdown-menu-pnb {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-menu-hover-pnb {
+  background-color: #fff;
+  // list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  // text-align: center;
+  top: 0;
+  // visibility: hidden;
+  z-index: -99999;
+}
+
+.dropdown-menu-hover-pnb li:first-child {
+  cursor: default;
+}
+
+.dropdown-menu-hover-pnb a {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dropdown-menu-hover-pnb a:hover {
+  background: #ba68c8;
+  color: #fff;
+}
+
+.dropdown-menu-pnb:hover .dropdown-menu-hover-pnb {
+  // background: #7b1fa2;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s, background, 2s 0.5s linear;
+  transition: all 0.5s, background 2s 0.5s linear;
+}
+
 .whatsapp-icon {
   position: fixed;
   bottom: 20px; /* Distância a partir do canto inferior */
