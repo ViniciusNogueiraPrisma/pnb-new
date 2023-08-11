@@ -28,6 +28,12 @@
   z-index: 1;
 }
 
+#banner-img-home {
+  z-index: -9999;
+  width: 100%;
+  position: absolute;
+}
+
 .dropdown-menu-hover-pnb {
   // background-color: #fff;
   background-color: #002e5f;
