@@ -66,20 +66,54 @@ var swiper = new Swiper(".mySwiper-carrosel-cards-qs", {
   },
 });
 
+// const link1 = document.getElementById("link1");
+// const link2 = document.getElementById("link2");
+// const div1 = document.getElementById("div1");
+// const div2 = document.getElementById("div2");
+
+// // Adicionar ouvintes de evento para os links
+// link1.addEventListener("click", (event) => {
+//   event.preventDefault(); // Impede o comportamento padrão do link
+//   showDiv(div1, div2, link1, link2);
+// });
+
+// link2.addEventListener("click", (event) => {
+//   event.preventDefault(); // Impede o comportamento padrão do link
+//   showDiv(div2, div1, link2, link1);
+// });
+
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
 const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
 
+// Função para mostrar uma div e aplicar uma classe
+function showDivAndApplyClass(
+  divToShow,
+  divToHide,
+  linkToShow,
+  linkToHide,
+  className
+) {
+  divToShow.classList.add(className);
+  divToShow.style.display = "block";
+
+  divToHide.style.display = "none";
+  divToHide.classList.remove(className);
+
+  linkToShow.classList.add("active");
+  linkToHide.classList.remove("active");
+}
+
 // Adicionar ouvintes de evento para os links
 link1.addEventListener("click", (event) => {
   event.preventDefault(); // Impede o comportamento padrão do link
-  showDiv(div1, div2, link1, link2);
+  showDivAndApplyClass(div1, div2, link1, link2, "showing");
 });
 
 link2.addEventListener("click", (event) => {
   event.preventDefault(); // Impede o comportamento padrão do link
-  showDiv(div2, div1, link2, link1);
+  showDivAndApplyClass(div2, div1, link2, link1, "showing");
 });
 
 function checkWindowSizeHome() {

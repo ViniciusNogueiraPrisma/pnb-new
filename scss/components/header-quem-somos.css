@@ -85,6 +85,12 @@
   align-items: center;
 }
 
+.active-link {
+  background-color: white !important;
+  color: #002e5f !important;
+  transition: 0.5s ease;
+}
+
 .header-tools {
   display: flex;
   align-items: center;

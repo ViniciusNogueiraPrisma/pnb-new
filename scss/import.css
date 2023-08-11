@@ -6759,10 +6759,10 @@ footer {
 }
 .title-promos-produtos-ns a {
   padding: 8px 16px 8px 16px;
-  background-color: #ffffff;
+  background-color: #455c81;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 4px;
-  color: #002e5f;
   font-size: 14px;
   font-family: "Roboto";
   font-weight: 700;
@@ -7964,6 +7964,12 @@ p {
   padding-right: 72px;
   height: 32px;
   align-items: center;
+}
+
+.active-link {
+  background-color: white !important;
+  color: #002e5f !important;
+  transition: 0.5s ease;
 }
 
 .header-tools {
