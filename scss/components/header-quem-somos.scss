@@ -1097,11 +1097,22 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-left: 72px;
+    // padding-left: 72px;
   }
-
+  
+  .contato-pnb {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .carrosel-quem-somos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
   .infos-text-conheca-qs {
     width: 100%;
+    padding-right: 0;
   }
 
   .conheca-title-card-qs {
