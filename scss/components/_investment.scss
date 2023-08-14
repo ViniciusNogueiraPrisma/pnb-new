@@ -1,13 +1,218 @@
 .container-invest {
   display: flex;
   flex: 1;
+  border: 1px solid red;
+}
+
+.first-section-main {
+  display: flex;
+  justify-content: space-between;
+  height: 71.6vh;
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.content-invest-img {
+  width: 50%;
+}
+
+.content-invest-img img {
+  border-top-left-radius: 4px;
+}
+
+.content-invest-text {
+  // width: 50%;
+  gap: 80px;
+  margin: auto;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+
+  // max-width: 1200px; /* Define uma largura máxima */
+  // margin-left: auto; /* Centraliza horizontalmente */
+  // margin-right: auto;
+  // padding-left: 15px; /* Adiciona um espaçamento interno semelhante ao do container */
+  // padding-right: 15px;
+  // box-sizing: border-box;
+}
+
+.cambio-cards-content {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.cambio-card {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 32px;
+  border-radius: 4px;
+  background-color: white;
+
+  h1 {
+    color: #333333;
+    font-size: 52px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 64.48px;
+    word-wrap: break-word;
+  }
+
+  h4 {
+    color: #0160a6;
+    font-size: 18px;
+    font-family: "PT Serif";
+    line-height: 25.2px;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+
+  span {
+    color: #666666;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.main-content-invest {
+  padding-top: 80px;
+  gap: 80px;
+  // border: 1px solid red;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.derivativos-invest {
+  background-color: #002e5f;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container-derivativos {
+  // border: 1px solid red;
+
+  h1 {
+    color: white;
+    font-size: 32px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 44.8px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+  }
+
+  h5 {
+    color: #dddddd;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+  }
+
+  span {
+    color: #dddddd;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.container-multi {
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+  h1 {
+    color: #002e5f;
+    font-size: 34px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    color: #002e5f;
+    font-family: "PT Serif";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+
+    width: 55%;
+  }
+
+  span {
+    color: #666666;
+    font-size: 16px;
+    font-family: "Roboto";
+    line-height: 25.6px;
+    font-weight: 400;
+    word-wrap: break-word;
+
+    display: inline-block;
+    width: 58%;
+  }
+}
+
+.derivativos-card-content {
+  display: flex;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.derivativos-card {
+  background-color: white;
+  padding: 32px;
+  width: 276px;
+  border-radius: 4px;
+
+  h1 {
+    color: #002e5f;
+    font-size: 28px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    margin: 0;
+  }
+}
+
+.image-bg-home-invest {
+  // border: 1px solid red;
+  // position: absolute;
+  object-fit: cover;
+  right: 0;
+  width: 600px;
+}
+
+.image-bg-home-invest img {
+  border: 1px solid red;
+  // margin-left: 200px;
+  right: 0;
+  left: 0;
+}
+
+.image-first-section img {
+  // border: 1px solid red;
+  position: absolute;
+  right: 0;
+  width: 50%;
 }
 
 .text-first-section {
-  //   border: 1px solid red;
-  width: 60%;
-  margin-bottom: 150px;
-  //   padding-right: 80px;
+  // border: 1px solid yellow;
+  width: 50%;
+  // margin-left: 0px !important;
 
   span {
     // M&A
@@ -42,25 +247,23 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  border: 1px solid red;
 }
 
 .img-first-section {
-  //   width: 50%;
   height: 100%;
-  // border: 10px solid red;
 
   img {
-    // border: 1px solid red;
-    // width: 100%;
-    // height: 100%;
-    // max-width: 100%;
-    // max-height: 100%;
-    // width: 948px;
-    // height: 602px;
     object-fit: cover;
     border-radius: 4px;
-    // border: 1px solid red;
   }
+}
+
+.fixed-image {
+  border: 1px solid red;
+  // position: absolute;
+  right: 0;
+  width: 100%;
 }
 
 // * {
@@ -69,10 +272,22 @@
 
 .section-main-invest {
   //   border: 1px solid red;
+  border: 1px solid red;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 0;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  // align-items: flex-end;
+}
+
+.container-first-investment {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row-reverse;
+  // height: 606px;
+  // position: relative;
 }
 
 .section-capitais {
@@ -107,6 +322,7 @@
 
 .notes-capitais-invest {
   padding-bottom: 80px;
+
   //   border: 1px solid red;
   //   width: 17%;
   h3 {
@@ -217,7 +433,7 @@
 }
 
 .cambio-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .cambio-title h1 {
