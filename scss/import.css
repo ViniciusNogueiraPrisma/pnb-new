@@ -9639,6 +9639,14 @@ input[type=checkbox].switch:disabled:not(:checked):after {
   width: 47vw;
 }
 
+.bloco-pagamentos {
+  right: 0;
+  width: 47vw;
+  height: 392px;
+  position: absolute;
+  background-color: #01518c;
+}
+
 .main-content-invest {
   margin-top: 100px;
   margin-left: 20px;
@@ -9895,6 +9903,8 @@ input[type=checkbox].switch:disabled:not(:checked):after {
 }
 
 .card-pag {
+  z-index: 1;
+  position: relative;
   display: flex;
   gap: 40px;
 }
