@@ -1,7 +1,7 @@
 .container-invest {
   display: flex;
   flex: 1;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .first-section-main {
@@ -21,19 +21,12 @@
 }
 
 .content-invest-text {
-  // width: 50%;
-  gap: 80px;
+  margin: 0;
+  padding: 0;
   margin: auto;
   justify-content: start;
   align-items: center;
   display: flex;
-
-  // max-width: 1200px; /* Define uma largura máxima */
-  // margin-left: auto; /* Centraliza horizontalmente */
-  // margin-right: auto;
-  // padding-left: 15px; /* Adiciona um espaçamento interno semelhante ao do container */
-  // padding-right: 15px;
-  // box-sizing: border-box;
 }
 
 .cambio-cards-content {
@@ -77,10 +70,22 @@
   }
 }
 
+.img-banner-invest {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+
+  img {
+    width: 47vw;
+  }
+}
+
 .main-content-invest {
-  padding-top: 80px;
+  height: 70vh;
+  position: relative;
+  // padding-top: 80px;
   gap: 80px;
-  // border: 1px solid red;
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
@@ -188,31 +193,27 @@
 }
 
 .image-bg-home-invest {
-  // border: 1px solid red;
-  // position: absolute;
   object-fit: cover;
   right: 0;
   width: 600px;
 }
 
 .image-bg-home-invest img {
-  border: 1px solid red;
-  // margin-left: 200px;
   right: 0;
   left: 0;
 }
 
 .image-first-section img {
-  // border: 1px solid red;
   position: absolute;
   right: 0;
   width: 50%;
 }
 
 .text-first-section {
-  // border: 1px solid yellow;
-  width: 50%;
-  // margin-left: 0px !important;
+  position: absolute;
+  margin: auto;
+  width: 30%;
+  // bottom: 0;
 
   span {
     // M&A
@@ -236,18 +237,11 @@
   }
 }
 
-// * {
-//     border: 1px solid red;
-// }
-
 .first-section-invest {
-  //   border: 1px solid red;
   margin-top: 80px;
-  //   margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: end;
-  border: 1px solid red;
 }
 
 .img-first-section {
@@ -260,34 +254,22 @@
 }
 
 .fixed-image {
-  border: 1px solid red;
-  // position: absolute;
   right: 0;
   width: 100%;
 }
 
-// * {
-//   border: 1px solid red;
-// }
-
 .section-main-invest {
-  //   border: 1px solid red;
-  border: 1px solid red;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 0;
   display: flex;
   justify-content: center;
-  // align-items: flex-end;
 }
 
 .container-first-investment {
   width: 100%;
-  border: 1px solid red;
   display: flex;
   flex-direction: row-reverse;
-  // height: 606px;
-  // position: relative;
 }
 
 .section-capitais {
