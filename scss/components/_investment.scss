@@ -511,9 +511,25 @@
     display: none;
   }
 
+  .blocos-pagamentos-last {
+    background-color: #0160a6;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    height: 595px;
+    margin-top: -625px;
+    // bottom: 20px;
+  }
+
   .cards-pagamento-invest-last {
     display: contents;
     gap: 24px;
+
+    img {
+      z-index: 1;
+      // border-radius: 24px;
+    }
   }
 
   .content-pagamentos {
@@ -523,6 +539,7 @@
 
   .title-pagamentos-invest {
     width: 100%;
+    z-index: 1;
   }
 
   .container-cards-banking {
