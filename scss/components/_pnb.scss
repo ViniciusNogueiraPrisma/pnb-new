@@ -9,6 +9,138 @@
   justify-content: center;
 }
 
+@media (max-width: 450px) {
+  .horario-input {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 5px !important;
+  }
+
+  .resultado-input {
+    padding-bottom: 30px;
+  }
+
+  .icons-input {
+    flex-direction: column;
+  }
+}
+
+.container-busca {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  flex: 1;
+}
+
+.horario-input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  h1 {
+    margin: 0;
+  }
+
+  h5 {
+    margin: 0;
+  }
+}
+
+.resultado-busca {
+  margin-bottom: -65px;
+}
+
+.title-busca {
+  h1 {
+    // Viverra faucibus amet sollicitudin
+    color: #666666;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.resultado-input {
+  // border: 1px solid red;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 13px;
+  margin-top: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    // 00
+    color: #bbbbbb;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+}
+
+.icons-input {
+  display: flex;
+  gap: 10px;
+  border-radius: 4px;
+
+  a {
+    background-color: #f5f5f5;
+    padding: 6px;
+  }
+}
+
+.horario-input {
+  h1 {
+    // Nome do documento
+    color: #666666;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+    padding-bottom: 5px;
+  }
+
+  h5 {
+    // Horário do evento
+    color: #bbbbbb;
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 15.84px;
+    word-wrap: break-word;
+  }
+}
+
+.btns-busca {
+  // border: 1px solid red;
+  gap: 16px;
+  display: flex;
+
+  a {
+    background-color: #002e5f;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    // CVM
+    color: white;
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 15.84px;
+    word-wrap: break-word;
+  }
+}
+
 .title-pnb {
   display: flex;
   justify-content: center;
@@ -439,7 +571,7 @@ p {
   }
 }
 
-@media(max-width: 1030px) {
+@media (max-width: 1030px) {
   .content-image-footer-carrosel {
     display: none;
   }
@@ -467,7 +599,6 @@ p {
 }
 
 @media (max-width: 560px) {
-
   #section-duvida {
     padding-left: 20px;
     padding-right: 20px;
