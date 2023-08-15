@@ -9637,6 +9637,7 @@ input[type=checkbox].switch:disabled:not(:checked):after {
 }
 .img-banner-invest img {
   width: 47vw;
+  border-top-left-radius: 4px;
 }
 
 .bloco-pagamentos {
@@ -9767,6 +9768,7 @@ input[type=checkbox].switch:disabled:not(:checked):after {
 }
 
 .text-first-section {
+  z-index: 1;
   position: absolute;
   padding-bottom: 80px;
   margin: auto;
@@ -9979,6 +9981,89 @@ input[type=checkbox].switch:disabled:not(:checked):after {
   padding-top: 196px;
 }
 
+.cards-pagamento-invest-last {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .text-first-section {
+    position: relative;
+  }
+  .img-banner-invest {
+    position: relative;
+    width: 100%;
+  }
+  .content-invest-text {
+    flex-direction: column;
+  }
+  .img-banner-invest img {
+    width: 100%;
+  }
+  .text-first-section {
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 60px;
+  }
+  .main-content-invest {
+    margin-top: 0;
+    height: auto;
+    margin-left: 0;
+    padding-bottom: 0px;
+  }
+  .card-pag {
+    display: none;
+  }
+  .bloco-pagamentos {
+    display: none;
+  }
+  .cards-pagamento-invest-last {
+    display: contents;
+    gap: 24px;
+  }
+  .content-pagamentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-pagamentos-invest {
+    width: 100%;
+  }
+  .container-cards-banking {
+    flex-direction: column;
+  }
+  .cards-banking {
+    width: 100%;
+    height: auto;
+  }
+  .cambio-cards-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1050px) {
+  .values-capitais-invest {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 900px) {
+  .derivativos-card-content {
+    flex-direction: column;
+  }
+  .derivativos-card {
+    width: 100%;
+  }
+  .container-multi h3 {
+    width: 100%;
+  }
+  .container-multi span {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .values-capitais-invest {
+    grid-template-columns: auto;
+  }
+}
 /* Pages */
 #erro {
   width: 100%;
