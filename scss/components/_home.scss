@@ -7,6 +7,13 @@
   padding-right: 40px;
 }
 
+.mobile-icons-header {
+  display: none;
+
+  gap: 10px;
+  align-items: center;
+}
+
 .content-home {
   display: flex;
   justify-content: space-between;
@@ -297,5 +304,29 @@
 
   .cards-home {
     grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .mobile-icons-header {
+    display: flex;
+  }
+
+  .infos-banner-qs h4 {
+    font-size: 34px !important;
+  }
+
+  .line-content-banner {
+    border-bottom: 1px solid white;
+    padding-bottom: 12px;
+    margin-top: 24px;
+  }
+
+  .infos-content-banner-qs {
+    padding-bottom: 20px;
+  }
+
+  .pag-banner-qs {
+    display: none !important;
   }
 }

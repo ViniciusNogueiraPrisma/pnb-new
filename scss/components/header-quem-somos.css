@@ -494,9 +494,15 @@
 .video-quem-somos {
   position: relative;
   width: 100%;
-  height: 300px; /* Altura fixa de 300px */
+  height: 558px; /* Altura fixa de 300px */
   overflow: hidden;
   margin-top: 112px;
+}
+
+.line-content-banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Estilos para o vídeo dentro do contêiner */
@@ -505,7 +511,7 @@
   top: 0;
   left: 0;
   width: 100%; /* Largura ocupa a tela inteira */
-  height: 100%; /* Altura ocupa o espaço do contêiner */
+  height: 100% !important; /* Altura ocupa o espaço do contêiner */
   object-fit: cover; /* Mantém a proporção e preenche o contêiner */
 }
 
@@ -990,12 +996,6 @@
   .conheca-title-card-qs {
     padding-left: 0;
     width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .infos-content-banner-qs {
-    flex-direction: column;
-    gap: 50px;
   }
 }
 @media (max-width: 857px) {

@@ -1,5 +1,5 @@
 let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 30,
   autoplay: {
     delay: 2000,
@@ -12,7 +12,7 @@ let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
 });
 
 function checkWindowSizeQs() {
-  if (window.innerWidth <= 1000) {
+  if (window.innerWidth <= 1135) {
     swiperQuemSomos.params.slidesPerView = 2;
   } else {
     swiperQuemSomos.params.slidesPerView = 3;
@@ -20,9 +20,9 @@ function checkWindowSizeQs() {
 
   if (window.innerWidth <= 850) {
     swiperQuemSomos.params.slidesPerView = 1;
-  } else {
-    swiperQuemSomos.params.slidesPerView = 2;
   }
+
+  
 
   swiperQuemSomos.update();
 }
@@ -31,16 +31,15 @@ checkWindowSizeQs();
 window.addEventListener("resize", checkWindowSizeQs);
 
 var swiperAval = new Swiper(".mySwiper-quem-somos-aval", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 24,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-  
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
