@@ -8471,7 +8471,6 @@ p {
   width: 100%;
   height: auto;
   height: 58.01548vh;
-  filter: brightness(40%);
   width: 100%;
   object-fit: cover;
 }
@@ -9065,6 +9064,15 @@ p {
 }
 .container-cursos-infos-pnb {
   margin-top: 64px;
+}
+
+.gradient {
+  background: rgb(0, 46, 95);
+  background: linear-gradient(90deg, rgba(0, 46, 95, 0.7511379552) 56%, rgba(0, 46, 95, 0.4009978992) 100%);
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 58.01548vh;
 }
 
 .content-cursos-infos-pnb {
