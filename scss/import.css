@@ -71,15 +71,8 @@
   font-style: italic;
   font-display: swap;
 }
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon/icomoon.eot?2hfkhm");
-  src: url("../fonts/icomoon/icomoon.eot?2hfkhm#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?2hfkhm") format("truetype"), url("../fonts/icomoon/icomoon.woff?2hfkhm") format("woff"), url("../fonts/icomoon/icomoon.svg?2hfkhm#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
+[class^=icon-],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -6154,7 +6147,7 @@ footer {
   .line-content-banner {
     border-bottom: 1px solid white;
     padding-bottom: 12px;
-    margin-top: 24px;
+    margin-top: 112px;
   }
   .infos-content-banner-qs {
     padding-bottom: 20px;
@@ -6248,13 +6241,23 @@ footer {
   transition: transform 0.3s ease-out, opacity 0.3s ease;
 }
 
+.swiper-hover-div .image-with-overlay {
+  filter: grayscale(1);
+  transition: 0.5s ease;
+}
+
+.swiper-hover-div:hover .image-with-overlay {
+  transition: 0.5s ease;
+  filter: grayscale(0);
+}
+
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%; /* Ajuste a altura do overlay conforme necessário */
-  background: linear-gradient(to top, rgba(15, 66, 160, 0.5) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba(40, 76, 139, 0.5) 42%, transparent 100%);
   opacity: 0;
   transition: opacity 0.9s ease; /* Transição de opacidade */
 }
@@ -6891,7 +6894,7 @@ footer {
 }
 
 .titulo-banner-qs {
-  width: 55%;
+  width: 60%;
 }
 
 .apenas-infos-valores-promos {
@@ -8467,7 +8470,7 @@ p {
 .img-banner-qs img {
   width: 100%;
   height: auto;
-  height: 65.0154798762vh;
+  height: 58.01548vh;
   filter: brightness(40%);
   width: 100%;
   object-fit: cover;
@@ -8528,11 +8531,17 @@ p {
 }
 
 .line-content-banner {
+  margin-top: 12.6687435099vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width: 400px) {
+  .line-content-banner {
+    margin-top: 2.668744vh !important;
+  }
+}
 /* Estilos para o vídeo dentro do contêiner */
 #video-quem-somos-img {
   position: absolute;
@@ -8630,6 +8639,16 @@ p {
   word-wrap: break-word;
 }
 
+.swiper-pagination-quem-somos {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 477px) {
+  .swiper-pagination-quem-somos {
+    margin-top: -30px !important;
+  }
+}
 .card-img-qs img {
   margin-left: 10.3199174407vh;
   height: 615px;

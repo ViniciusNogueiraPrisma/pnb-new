@@ -90,17 +90,93 @@
 
     <header class="header-qs">
       <div class="header-acessibilidade">
-        <div class="header-tools">
+        <!-- <div class="header-tools">
           <span>Acessibilidade</span>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-const.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-diminuir.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-aumentar.svg" alt=""
-          /></a>
+          <button
+            id="contrastToggle"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Contraste"
+          >
+            <i class="icon-contraste"></i>
+          </button>
+
+          <button
+            id="decreaseFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Diminuir o tamanho da fonte"
+          >
+            <i class="icon-diminuir-fonte" accesskey="5"></i>
+          </button>
+
+          <button
+            id="increaseFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Aumentar o tamanho da fonte"
+          >
+            <i class="icon-aumentar-fonte" accesskey="4"></i>
+          </button>
+        </div> -->
+
+        <div class="accessibility-tools">
+          <div class="login-info" id="usuLogado" style="display: none">
+            <div class="left-side-login">
+              <img src="./images/icons/icon-profile.svg" alt="" />
+              <h3 class="name-profile">
+                <span id="LtrNomeUsuario"></span>
+              </h3>
+            </div>
+          </div>
+          <a href="/acessibilidade"> Acessibilidade </a>
+
+          <button
+            id="contrastToggle"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Contraste"
+          >
+            <i class="icon-contraste"></i>
+          </button>
+
+          <button
+            id="diminuirFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="5"
+            aria-label="Diminuir o tamanho da fonte"
+          >
+            <i class="icon-diminuir-fonte"></i>
+          </button>
+
+          <button
+            id="aumentarFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="4"
+            aria-label="Aumentar o tamanho da fonte"
+          >
+            <i class="icon-aumentar-fonte"></i>
+          </button>
         </div>
 
         <!-- <div class="header-language">
@@ -695,6 +771,7 @@
                   <img
                     src="./images/new-images/Time/foto_4.jpg"
                     alt=""
+                    id="img-hover"
                     class="image-with-overlay"
                   />
                   <div class="overlay"></div>
@@ -878,8 +955,7 @@
                 <p class="inactive-text">Suporte mensal com especialistas</p>
                 <p class="inactive-text">Aulas ao vivo por semana</p>
                 <p class="inactive-text">
-                  Suporte ao vivo Põe no Bolso por 3 
-                  meses
+                  Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
                 <p class="inactive-text">
                   Suporte ao vivo todos os dias com especialistas
@@ -905,8 +981,7 @@
                 <p class="inactive-text">Suporte mensal com especialistas</p>
                 <p class="inactive-text">Aulas ao vivo por semana</p>
                 <p class="inactive-text">
-                  Suporte ao vivo Põe no Bolso por 3 
-                  meses
+                  Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
                 <p class="inactive-text">
                   Suporte ao vivo todos os dias com especialistas
@@ -930,8 +1005,7 @@
                 <p class="inactive-text">Suporte mensal com especialistas</p>
                 <p class="inactive-text">Aulas ao vivo por semana</p>
                 <p class="inactive-text">
-                  Suporte ao vivo Põe no Bolso por 3 
-                  meses
+                  Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
                 <p class="inactive-text">
                   Suporte ao vivo todos os dias com especialistas
@@ -966,8 +1040,7 @@
                       </p>
                       <p class="inactive-text">Aulas ao vivo por semana</p>
                       <p class="inactive-text">
-                        Suporte ao vivo Põe no Bolso por 3 
-                        meses
+                        Suporte ao vivo Põe no Bolso por 3 meses
                       </p>
                       <p class="inactive-text">
                         Suporte ao vivo todos os dias com especialistas

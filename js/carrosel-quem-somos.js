@@ -6,7 +6,7 @@ let swiperQuemSomos = new Swiper(".mySwiper-quem-somos", {
     disableOnInteraction: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-quem-somos",
     clickable: true,
   },
 });

@@ -85,11 +85,21 @@
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-out, opacity 0.3s ease;
+  // filter: grayscale(1);
 }
 
-// .swiper-hover-div:hover .image-container {
-//   height: 269px; /* Aumenta a altura da div container */
-// }
+.swiper-hover-div .image-with-overlay {
+  filter: grayscale(1);
+  transition: 0.5s ease;
+
+  // border: 10px solid red;
+}
+
+.swiper-hover-div:hover .image-with-overlay {
+  // border: 20px solid red;
+  transition: 0.5s ease;
+  filter: grayscale(0);
+}
 
 .overlay {
   position: absolute;
@@ -97,11 +107,18 @@
   left: 0;
   width: 100%;
   height: 100%; /* Ajuste a altura do overlay conforme necessário */
+  // background: linear-gradient(
+  //   to top,
+  //   rgba(15, 66, 160, 0.5) 50%,
+  //   transparent 100%
+  // );
+
   background: linear-gradient(
     to top,
-    rgba(15, 66, 160, 0.5) 50%,
+    rgba(40, 76, 139, 0.5) 42%,
     transparent 100%
   );
+
   opacity: 0;
   transition: opacity 0.9s ease; /* Transição de opacidade */
 }

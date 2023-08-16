@@ -439,7 +439,7 @@
 .img-banner-qs img {
   width: 100%;
   height: auto;
-  height: 65.0154798762vh;
+  height: 58.01548vh;
   filter: brightness(40%);
   width: 100%;
   object-fit: cover;
@@ -500,11 +500,17 @@
 }
 
 .line-content-banner {
+  margin-top: 12.6687435099vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width: 400px) {
+  .line-content-banner {
+    margin-top: 2.668744vh !important;
+  }
+}
 /* Estilos para o vídeo dentro do contêiner */
 #video-quem-somos-img {
   position: absolute;
@@ -602,6 +608,16 @@
   word-wrap: break-word;
 }
 
+.swiper-pagination-quem-somos {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 477px) {
+  .swiper-pagination-quem-somos {
+    margin-top: -30px !important;
+  }
+}
 .card-img-qs img {
   margin-left: 10.3199174407vh;
   height: 615px;
