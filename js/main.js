@@ -673,7 +673,7 @@ function VerifyActive(item, content, content_actived) {
   icon_item_active.forEach(
     (item) =>
       (item.innerHTML =
-        "<img src='./images/new-images/icons/icon-+.svg' alt='' />")
+        "<i class='fa-solid fa-plus' style='color: #000000;''></i>")
   );
 
   if (content_actived) {
@@ -683,7 +683,7 @@ function VerifyActive(item, content, content_actived) {
 
   if (content !== content_actived) {
     icon_item.innerHTML =
-      "<img src='./images/new-images/icons/icon-menos-.svg' alt=''>";
+      "<i class='fa-solid fa-minus' style='color: #000000;''></i>";
     content.classList.add("active");
     content.style.height = content.scrollHeight + 10 + "px";
   }
