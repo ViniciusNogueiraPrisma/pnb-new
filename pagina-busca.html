@@ -65,18 +65,112 @@
   <body>
     <header class="header-qs">
       <div class="header-acessibilidade">
-        <div class="header-tools">
+        <!-- <div class="header-tools">
           <span>Acessibilidade</span>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-const.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-diminuir.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="./images/new-images/icons/icon-aumentar.svg" alt=""
-          /></a>
+          <button
+            id="contrastToggle"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Contraste"
+          >
+            <i class="icon-contraste"></i>
+          </button>
+
+          <button
+            id="decreaseFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Diminuir o tamanho da fonte"
+          >
+            <i class="icon-diminuir-fonte" accesskey="5"></i>
+          </button>
+
+          <button
+            id="increaseFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Aumentar o tamanho da fonte"
+          >
+            <i class="icon-aumentar-fonte" accesskey="4"></i>
+          </button>
+        </div> -->
+
+        <div class="accessibility-tools">
+          <div class="login-info" id="usuLogado" style="display: none">
+            <div class="left-side-login">
+              <img src="./images/icons/icon-profile.svg" alt="" />
+              <h3 class="name-profile">
+                <span id="LtrNomeUsuario"></span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- <div
+            class="avatar"
+            data-tooltip="Thinking Cat"
+            style="margin-right: 200px"
+          >
+            aa
+          </div> -->
+
+          <a href="/acessibilidade"> Acessibilidade </a>
+
+          <button
+            id="contrastTogglea"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-title="Contraste"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            aria-label="Contraste"
+          >
+            <img src="./images/new-images/icons/icon-const.svg" alt="" />
+          </button>
+
+          <button
+            id="diminuirFont"
+            type="button"
+            class="tool"
+            data-bs-toggle="tooltip"
+            data-bs-title="Aumentar o tamanho da fonte"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="5"
+            aria-label="Diminuir o tamanho da fonte"
+          >
+            <!-- <i class="icon-diminuir-fonte"></i> -->
+            <img src="./images/new-images/icons/icon-aumentar.svg" alt="" />
+          </button>
+
+          <button
+            id="aumentarFont"
+            type="button"
+            class="tool"
+            data-bs-title="Diminuir o tamanho da fonte"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="4"
+          >
+            <!-- <i class="icon-aumentar-fonte"></i> -->
+            <img src="./images/new-images/icons/icon-diminuir.svg" alt="" />
+          </button>
         </div>
+
+        <!-- <div class="header-language">
+          <img src="./images/new-images/icons/icon-world.svg" alt="" />
+          <a href=""><span>EN</span></a>
+        </div> -->
       </div>
 
       <nav class="container nav-qs-menu">
@@ -379,6 +473,8 @@
 
     <section class="banner-qs">
       <div class="img-banner-qs">
+        <div class="gradient"></div>
+
         <img src="./images/new-images/header_curso.jpg" alt="" />
       </div>
       <div class="container-banner-qs">
@@ -386,35 +482,45 @@
           <div
             class="container infos-content-banner-qs infos-content-banner-np"
           >
-            <div class="titulo-banner-qs">
-              <h4>Resultado da busca</h4>
-              <div class="pag-banner-qs">
-                <a href=""
-                  ><img src="./images/new-images/icons/icon-home.svg" alt=""
-                /></a>
-                <img
-                  src="./images/new-images/icons/icon-setas-right.png"
-                  alt=""
-                />
-                <a href=""> <span>Nossos Produtos</span></a>
+            <div class="line-content-banner">
+              <div class="titulo-banner-qs">
+                <h4>Resultado da busca</h4>
+                <div class="pag-banner-qs">
+                  <a href=""
+                    ><img src="./images/new-images/icons/icon-home.svg" alt=""
+                  /></a>
+                  <img
+                    src="./images/new-images/icons/icon-setas-right.png"
+                    alt=""
+                  />
+                  <a href=""> <span>Nossos Produtos</span></a>
 
-                <img
-                  src="./images/new-images/icons/icon-setas-right.png"
-                  alt=""
-                />
-                <a href=""> <span>Suporte Extendido</span></a>
+                  <img
+                    src="./images/new-images/icons/icon-setas-right.png"
+                    alt=""
+                  />
+                  <a href=""> <span>Resultado da busca</span></a>
+                </div>
+                <div class="mobile-icons-header">
+                  <a href=""
+                    ><img src="./images/new-images/icons/icon-mais.svg" alt=""
+                  /></a>
+                  <a href=""
+                    ><img src="./images/new-images/icons/icon-menos.svg" alt=""
+                  /></a>
+                </div>
               </div>
-            </div>
 
-            <div class="bottom-content-qs">
-              <div class="share-banner-qs">
-                <img src="./images/new-images/icons/icon-share.png" alt="" />
-                <img src="./images/new-images/icons/icon-pdf.png" alt="" />
-                <img src="./images/new-images/icons/icon-wpp.png" alt="" />
-                <img
-                  src="./images/new-images/icons/icon-linkedin-2.png"
-                  alt=""
-                />
+              <div class="bottom-content-qs">
+                <div class="share-banner-qs">
+                  <img src="./images/new-images/icons/icon-share.svg" alt="" />
+                  <img src="./images/new-images/icons/icon-pdf.svg" alt="" />
+                  <img src="./images/new-images/icons/icon-wpp.svg" alt="" />
+                  <img
+                    src="./images/new-images/icons/icon-linkedin1.svg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
