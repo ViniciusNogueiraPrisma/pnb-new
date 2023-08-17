@@ -579,13 +579,18 @@ svg {
 nav {
   background: #fff;
   border-radius: 4px;
-  margin-top: 16px;
   margin-left: 72px;
   margin-right: 72px;
   height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.banner-container {
+  position: absolute;
+  width: 100%;
+  margin-top: 16px;
 }
 
 .nav-content {
@@ -841,7 +846,6 @@ nav {
 .header {
   transition: 0.2s;
   height: 928px;
-  padding: 16px 0 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1502,6 +1506,9 @@ nav {
   .nav-content {
     display: none;
   }
+  .banner-container {
+    margin-top: 0px !important;
+  }
   .toggle-mobile-menu {
     display: block;
     color: black;
@@ -1603,6 +1610,12 @@ nav {
   }
   .nav-logo {
     margin: 0;
+  }
+}
+@media (max-width: 920px) {
+  .banner-home img {
+    object-fit: cover;
+    object-position: -400px;
   }
 }
 .accordion {
@@ -4054,7 +4067,7 @@ footer {
 .two a {
   color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(217, 217, 217);
   width: 85px;
   padding-bottom: 7px;
 }
@@ -5891,6 +5904,24 @@ footer {
   position: absolute;
 }
 
+.container-carrosel-banner {
+  background-color: #fff;
+}
+
+.banner-home {
+  position: absolute;
+  width: 100%;
+  height: 928px;
+  z-index: -9999;
+  object-fit: cover;
+}
+.banner-home img {
+  z-index: -9999;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
 .dropdown-menu-hover-pnb {
   background-color: #002e5f;
   margin: 0;
@@ -6050,6 +6081,15 @@ footer {
 
 .swiper-content {
   transition: 0.5s ease;
+}
+
+.accordion_content p {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
 }
 
 .swiper-hover-div:hover .swiper-content {

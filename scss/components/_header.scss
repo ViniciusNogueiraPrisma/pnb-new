@@ -1,13 +1,19 @@
 nav {
   background: #fff;
   border-radius: 4px;
-  margin-top: 16px;
+  // margin-top: 16px;
   margin-left: 72px;
   margin-right: 72px;
   height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.banner-container {
+  position: absolute;
+  width: 100%;
+  margin-top: 16px;
 }
 
 // * {
@@ -286,7 +292,7 @@ nav {
   height: 928px;
   // height: 97.17277486910994vh;
   // background-image: url("../../images/new-images/Home/banner_home_04.jpg");
-  padding: 16px 0 0;
+  // padding: 16px 0 0;
   // background-color: rgb(220, 220, 220);
   background-size: cover;
   background-position: center;
@@ -876,6 +882,11 @@ nav {
   width: 100%;
 }
 
+  // * {
+  //   border: 1px solid red;
+  // }
+  
+
 #btn-mobile-talk {
   border: 1px solid #002e5f;
   padding: 10px 24px 10px 24px;
@@ -1036,6 +1047,31 @@ nav {
     gap: 30px;
   }
 
+  // .gradient-home {
+  //   background: rgb(113, 113, 113);
+  //   background: -moz-linear-gradient(
+  //     90deg,
+  //     rgba(113, 113, 113, 0.5) 0%,
+  //     rgba(113, 113, 113, 0.5) 100%
+  //   );
+  //   background: -webkit-linear-gradient(
+  //     90deg,
+  //     rgba(113, 113, 113, 0.5) 0%,
+  //     rgba(113, 113, 113, 0.5) 100%
+  //   );
+  //   background: linear-gradient(
+  //     90deg,
+  //     rgba(113, 113, 113, 0.5) 0%,
+  //     rgba(113, 113, 113, 0.5) 100%
+  //   );
+  //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#717171",endColorstr="#717171",GradientType=1);
+
+  //   // border: 1px solid red;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 928px;
+  // }
+
   .nav-texts a {
     margin: 10px;
   }
@@ -1083,6 +1119,10 @@ nav {
 @media (max-width: 1075px) {
   .nav-content {
     display: none;
+  }
+
+  .banner-container {
+    margin-top: 0px !important;
   }
 
   .toggle-mobile-menu {
@@ -1219,5 +1259,12 @@ nav {
 
   .nav-logo {
     margin: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .banner-home img {
+    object-fit: cover;
+    object-position: -400px;
   }
 }

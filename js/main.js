@@ -25,13 +25,13 @@ function alterarBackground() {
 
   if (bgTrade) {
     // Verifica se o elemento foi encontrado
-    if (window.innerWidth <= 1150) {
-      bgTrade.style.backgroundImage =
-        "url('../../images/new-images/Home/bg-home-filter.png')";
-    } else {
-      bgTrade.style.backgroundImage =
-        "url('../../images/new-images/Home/banner_home_04.jpg')";
-    }
+    // if (window.innerWidth <= 1150) {
+    //   bgTrade.style.backgroundImage =
+    //     "url('../../images/new-images/Home/bg-home-filter.png')";
+    // } else {
+    //   bgTrade.style.backgroundImage =
+    //     "url('../../images/new-images/Home/banner_home_04.jpg')";
+    // }
   }
 }
 
