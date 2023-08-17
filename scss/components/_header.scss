@@ -8,12 +8,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 32px;
 }
 
 .banner-container {
   position: absolute;
   width: 100%;
-  margin-top: 16px;
+  // margin-top: 16px;
 }
 
 // * {
@@ -99,14 +101,14 @@ nav {
   justify-content: center;
   // margin-top: 10.319917440660475vh;
   // margin-top: 14.659685863874346vh;
-  margin-top: 140px;
+  // margin-top: 140px;
 }
 
 .header-txts {
   position: absolute;
   // margin-left: 46.43962848297214vh;
   margin-left: 550px;
-  margin-top: 50px;
+  margin-top: 167px;
 }
 
 .header-txts h3 {
@@ -1081,7 +1083,7 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 0;
-    margin-top: 200px;
+    margin-top: 238px;
   }
 
   .header-txts h3 {
@@ -1212,7 +1214,7 @@ nav {
 
   .header-txts {
     position: absolute;
-    margin-top: 64px;
+    margin-top: 174px;
   }
 
   .content-numbers p {

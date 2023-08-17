@@ -585,12 +585,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
 }
 
 .banner-container {
   position: absolute;
   width: 100%;
-  margin-top: 16px;
 }
 
 .nav-content {
@@ -664,13 +664,12 @@ nav {
 .header-content {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
 }
 
 .header-txts {
   position: absolute;
   margin-left: 550px;
-  margin-top: 50px;
+  margin-top: 167px;
 }
 
 .header-txts h3 {
@@ -1475,7 +1474,7 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 0;
-    margin-top: 200px;
+    margin-top: 238px;
   }
   .header-txts h3 {
     color: white;
@@ -1573,7 +1572,7 @@ nav {
   }
   .header-txts {
     position: absolute;
-    margin-top: 64px;
+    margin-top: 174px;
   }
   .content-numbers p {
     font-size: 13px;
@@ -5914,6 +5913,7 @@ footer {
   height: 928px;
   z-index: -9999;
   object-fit: cover;
+  margin-top: -110px;
 }
 .banner-home img {
   z-index: -9999;
