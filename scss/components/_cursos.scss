@@ -5,12 +5,23 @@
 .gradient {
   // border: 1px solid red;
 
-  background: rgb(0, 36, 74);
+  background: rgb(0, 46, 95);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 46, 95, 1) 24%,
+    rgba(0, 46, 95, 0.27494747899159666) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 46, 95, 1) 24%,
+    rgba(0, 46, 95, 0.27494747899159666) 100%
+  );
   background: linear-gradient(
     90deg,
-    rgba(0, 36, 74, 0.8099614845938375) 57%,
-    rgba(0, 0, 0, 0.2777485994397759) 100%
+    rgba(0, 46, 95, 1) 24%,
+    rgba(0, 46, 95, 0.27494747899159666) 100%
   );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002e5f",endColorstr="#002e5f",GradientType=1);
 
   color: white;
   position: absolute;

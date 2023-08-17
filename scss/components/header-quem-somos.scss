@@ -102,6 +102,9 @@
   justify-content: end;
   padding-right: 72px;
 
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   height: 32px;
   align-items: center;
 }
@@ -536,6 +539,7 @@
 
 .container-banner-qs {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -585,7 +589,7 @@
 
 .line-content-banner {
   // border: 1px solid red;
-  margin-top: 12.668743509865005vh;
+  // margin-top: 12.668743509865005vh;
   width: 100%;
   display: flex;
   justify-content: space-between;

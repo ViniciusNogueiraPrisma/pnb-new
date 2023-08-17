@@ -15,6 +15,11 @@
 // // Chama a função quando a janela é redimensionada
 // window.addEventListener("resize", alterarBackground);
 
+// const tooltipTrigger = document.querySelector('[data-bs-toggle="tooltip"]');
+// const tooltipContent = [...tooltipTrigger].map(
+//   (tooltipEL) => new bootstrap.Tooltip(tooltipEL)
+// );
+
 function alterarBackground() {
   var bgTrade = document.getElementById("header-bg");
 
@@ -230,31 +235,31 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // Contraste
 
-function accessApplyTheme(theme) {
-  localStorage.setItem("access_theme", theme);
+// function accessApplyTheme(theme) {
+//   localStorage.setItem("access_theme", theme);
 
-  if (theme == "dark") {
-    $("body").attr("data-theme", "dark");
-  } else {
-    $("body").attr("data-theme", "light");
-  }
-}
+//   if (theme == "dark") {
+//     $("body").attr("data-theme", "dark");
+//   } else {
+//     $("body").attr("data-theme", "light");
+//   }
+// }
 
-var access_theme = "light";
+// var access_theme = "light";
 
-if (localStorage.getItem("access_theme")) {
-  access_theme = localStorage.getItem("access_theme");
-  accessApplyTheme(access_theme);
-}
+// if (localStorage.getItem("access_theme")) {
+//   access_theme = localStorage.getItem("access_theme");
+//   accessApplyTheme(access_theme);
+// }
 
-$("#contrast-toggle").on("click", function (e) {
-  if (access_theme == "light") {
-    access_theme = "dark";
-  } else {
-    access_theme = "light";
-  }
-  accessApplyTheme(access_theme);
-});
+// $("#contrast-toggle").on("click", function (e) {
+//   if (access_theme == "light") {
+//     access_theme = "dark";
+//   } else {
+//     access_theme = "light";
+//   }
+//   accessApplyTheme(access_theme);
+// });
 
 $(
   ".header .nav-menu-header .header-navigation-item > .dropdown-toggle"
