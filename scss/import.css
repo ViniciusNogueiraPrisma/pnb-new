@@ -6334,6 +6334,7 @@ footer {
 @media (max-width: 663px) {
   .accordion_header span {
     font-size: 24px;
+    padding-right: 20px;
   }
 }
 .container-carrosel {
