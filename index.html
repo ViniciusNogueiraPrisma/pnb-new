@@ -42,6 +42,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
     <meta property="og:title" content="TC - Relações com Investidores" />
     <meta property="og:description" content="TC - Relações com Investidores" />
     <meta property="og:image" content="./images/thumb-projeto.jpg" />
@@ -174,7 +176,7 @@
           </button>
 
           <button
-            id="diminuirFont"
+            id="AumentarFont"
             type="button"
             class="tool"
             data-bs-toggle="tooltip"
@@ -189,7 +191,7 @@
           </button>
 
           <button
-            id="aumentarFont"
+            id="DiminuirFonte"
             type="button"
             class="tool"
             data-bs-title="Diminuir o tamanho da fonte"
@@ -213,7 +215,7 @@
     <div class="headerFixoMenu">
       <header class="header" id="header-bg">
         <div class="banner-container">
-          <nav>
+          <nav class="themas">
             <div class="container nav-after-items">
               <img src="./images/new-images/logotipo.png" alt="" />
               <button
@@ -226,19 +228,21 @@
             </div>
             <div class="nav-content">
               <div class="nav-logo">
-                <img src="./images/logotipo.png" alt="" />
+                <img id="logo-home" src="./images/logotipo.png" alt="" />
               </div>
 
               <div class="nav-texts">
                 <div class="dropdown-menu-pnb">
-                  <a href="" class="link-dropdown"><span>Sobre o PNB</span></a>
+                  <a href="" class="link-dropdown"
+                    ><span class="themas">Sobre o PNB</span></a
+                  >
                 </div>
 
                 <div class="dropdown-menu-pnb">
                   <a href="" class="link-dropdown"
-                    ><span>Nossos Produtos</span></a
+                    ><span class="themas">Nossos Produtos</span></a
                   >
-                  <ul class="dropdown-menu-hover-pnb">
+                  <ul class="dropdown-menu-hover-pnb themas">
                     <li><a href="#">Suporte Extendido</a></li>
                     <li><a href="#">Cursos PNB</a></li>
                     <li><a href="#">Plugin PNB</a></li>
@@ -251,9 +255,9 @@
 
                 <div class="dropdown-menu-pnb">
                   <a class="border-text link-dropdown" href=""
-                    ><span>Investment Banking</span></a
+                    ><span class="themas">Investment Banking</span></a
                   >
-                  <ul class="dropdown-menu-hover-pnb">
+                  <ul class="dropdown-menu-hover-pnb themas">
                     <li><a href="#">Crédito</a></li>
                     <li><a href="#">Pagamentos</a></li>
                     <li><a href="#">Câmbio</a></li>
@@ -270,7 +274,7 @@
               </div>
 
               <div class="nav-search-talk">
-                <button>
+                <button class="themas">
                   <span>Fale com um especialista</span
                   ><img
                     id="nav-chat"
@@ -301,9 +305,12 @@
             </div>
 
             <div class="header-txts">
-              <h3 class="fade-in">Panorama de mercado</h3>
-              <h1 class="fade-in">
+              <h3 class="fade-in aumentarFontClass DiminuirFonteClass">
+                Panorama de mercado
+              </h3>
+              <h1 class="fade-in aumentarFontClass DiminuirFonteClass">
                 Conteúdo de valor para <br /><span
+                  class="aumentarFontClass DiminuirFonteClass"
                   >melhorar a sua estratégia <br />Operacional</span
                 >
               </h1>
@@ -559,31 +566,39 @@
 
     <main id="main-home">
       <section class="container container-texts">
-        <div class="content-main">
+        <div class="content-main themas">
           <div class="content-text">
             <div class="content-numbers content-n-1 fade-in">
-              <p>S&P 500</p>
-              <span>0.04% <small>1.6</small></span>
+              <p class="aumentarFontClass DiminuirFonteClass">S&P 500</p>
+              <span class="aumentarFontClass DiminuirFonteClass"
+                >0.04% <small>1.6</small></span
+              >
             </div>
 
             <div class="content-numbers content-n-2 fade-in">
-              <p>US 100</p>
-              <span>0.08% <small>1.6</small></span>
+              <p class="aumentarFontClass DiminuirFonteClass">US 100</p>
+              <span class="aumentarFontClass DiminuirFonteClass"
+                >0.08% <small>1.6</small></span
+              >
             </div>
 
             <div class="content-numbers content-n-3 fade-in">
-              <p>Bitcoin</p>
-              <span>1.18% <small>1.6</small></span>
+              <p class="aumentarFontClass DiminuirFonteClass">Bitcoin</p>
+              <span class="aumentarFontClass DiminuirFonteClass"
+                >1.18% <small>1.6</small></span
+              >
             </div>
 
             <div class="content-numbers content-n-4 fade-in">
-              <p>Etherum</p>
-              <span>0.74% <small>1.6</small></span>
+              <p class="aumentarFontClass DiminuirFonteClass">Etherum</p>
+              <span class="aumentarFontClass DiminuirFonteClass"
+                >0.74% <small>1.6</small></span
+              >
             </div>
           </div>
 
           <div class="content-logo fade-in">
-            <p>Fonte de dados</p>
+            <p class="aumentarFontClass DiminuirFonteClass">Fonte de dados</p>
             <img src="./images/new-images/logo-economatica.png" alt="" />
           </div>
         </div>
@@ -591,25 +606,29 @@
 
       <section class="container container-responsivo-full container-infos">
         <div class="content-home">
-          <div class="texts-home fade-in animate__animated animate__fadeInUp">
+          <div class="texts-home animate__animated">
             <!-- <h1 class="animate__animated animate__backOutLeft">
               An animated element
             </h1> -->
 
-            <h1>Sobre a <br /><span>Põe no Bolso</span></h1>
-            <p>
+            <h1 class="aumentarFontClass DiminuirFonteClass">
+              Sobre a <br /><span class="aumentarFontClass DiminuirFonteClass"
+                >Põe no Bolso</span
+              >
+            </h1>
+            <p class="aumentarFontClass DiminuirFonteClass">
               Comunidade, formada pelo analista técnico Wilson Neto, para quem
               opera DAY TRADE no Mercado de Renda Variável utilizando a técnica
               de Leitura de Fluxo.
             </p>
 
-            <p>
+            <p class="aumentarFontClass DiminuirFonteClass">
               Tem como missão capacitar e treinar os alunos para atuarem no
               Mercado Financeiro com Sabedoria, Prudência e Consistência,
               sustentado por decisões pessoais estruturadas e inteligentes.
             </p>
 
-            <h4>
+            <h4 class="aumentarFontClass DiminuirFonteClass">
               A GESTÃO DE RISCO é um dos nossos principais pilares operacionais.
             </h4>
 
@@ -617,40 +636,64 @@
           </div>
 
           <div class="cards-home">
-            <div class="card-content animate__animated card-home-1">
+            <div class="card-content themas animate__animated card-home-1">
               <img src="./images/new-images/icons/icon_youtube.svg" alt="" />
-              <h3 class="counter">75000+</h3>
-              <span class="counter">+ DE 75 MIL INSCRITOS </span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                75000+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+ DE 75 MIL INSCRITOS
+              </span>
             </div>
 
-            <div class="card-content animate__animated card-home-2">
+            <div class="card-content themas animate__animated card-home-2">
               <img src="./images/new-images/icons/icon_users.svg" alt="" />
-              <h3 class="counter">10000+</h3>
-              <span class="counter">+ 10 MIL ALUNOS POR ANO</span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                10000+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+ 10 MIL ALUNOS POR ANO</span
+              >
             </div>
 
-            <div class="card-content animate__animated card-home-3">
+            <div class="card-content themas animate__animated card-home-3">
               <img src="./images/new-images/icons/icon_award.svg" alt="" />
-              <h3 class="counter">37000+</h3>
-              <span class="counter">+ 37 MIL INSCRITOS</span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                37000+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+ 37 MIL INSCRITOS</span
+              >
             </div>
 
-            <div class="card-content animate__animated card-home-4">
+            <div class="card-content themas animate__animated card-home-4">
               <img src="./images/new-images/icons/icon_thumbs-up.svg" alt="" />
-              <h3 class="counter">390000+</h3>
-              <span class="counter">+ DE 329 MIL VISUALIZAÇÕES MENSAIS</span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                390000+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+ DE 329 MIL VISUALIZAÇÕES MENSAIS</span
+              >
             </div>
 
-            <div class="card-content animate__animated card-home-5">
+            <div class="card-content themas animate__animated card-home-5">
               <img src="./images/new-images/icons/icon_settings.svg" alt="" />
-              <h3 class="counter">1500+</h3>
-              <span class="counter">+1,5 MIL ALUNOS NO SUPORTE</span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                1500+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+1,5 MIL ALUNOS NO SUPORTE</span
+              >
             </div>
 
-            <div class="card-content animate__animated card-home-6">
+            <div class="card-content themas animate__animated card-home-6">
               <img src="./images/new-images/icons/icon_send.svg" alt="" />
-              <h3 class="counter">34000+</h3>
-              <span class="counter">+ 34 MIL INSCRITOS NO TELEGRAM</span>
+              <h3 class="counter themas aumentarFontClass DiminuirFonteClass">
+                34000+
+              </h3>
+              <span class="counter themas aumentarFontClass DiminuirFonteClass"
+                >+ 34 MIL INSCRITOS NO TELEGRAM</span
+              >
             </div>
           </div>
 
@@ -663,8 +706,10 @@
                       src="./images/new-images/icons/icon_youtube.svg"
                       alt=""
                     />
-                    <h3>75000+</h3>
-                    <span>+ DE 75 MIL INSCRITOS </span>
+                    <h3 class="aumentarFontClass DiminuirFonteClass">75000+</h3>
+                    <span class="aumentarFontClass DiminuirFonteClass"
+                      >+ DE 75 MIL INSCRITOS
+                    </span>
                   </div>
                 </div>
 
@@ -741,18 +786,16 @@
       </section>
     </main>
 
-    <div class="container-carrosel-banner">
+    <div class="container-carrosel-banner themas">
       <section class="container container-responsivo-full container-carrosel">
-        <div
-          class="content-carrosel fade-in animate__animated animate__fadeInUp"
-        >
+        <div class="content-carrosel fade-in animate__animated">
           <div class="content-text-carrosel">
-            <h1>
+            <h1 class="themas aumentarFontClass DiminuirFonteClass">
               Conheça o time <br />
-              <span>da PNB</span>
+              <span class="themas">da PNB</span>
             </h1>
 
-            <p>
+            <p class="themas aumentarFontClass DiminuirFonteClass">
               Lorem ipsum dolor sit amet consectetur. Sit aliquet nibh
               consectetur sociis turpis et. Donec feugiat consectetur iaculis
               pellentesque odio semper ut feugiat. Cursus urna enim lectus.
@@ -897,22 +940,37 @@
       </section>
     </div>
 
-    <div id="section-produtos">
+    <div id="section-produtos" class="themas">
       <div class="container container-responsivo-full container-produtos">
-        <div class="produtos-title fade-in animate__animated animate__fadeInUp">
-          <h4>Nossos Produtos</h4>
+        <div class="produtos-title fade-in animate__animated">
+          <h4 class="aumentarFontClass DiminuirFonteClass themas">
+            Nossos Produtos
+          </h4>
           <a href="#"
-            ><span id="link1" class="active-border">Suporte Extendido</span></a
+            ><span
+              id="link1"
+              class="active-border aumentarFontClass DiminuirFonteClass themas"
+              >Suporte Extendido</span
+            ></a
           >
-          <a href="#"><span class="gap-title" id="link2">Cursos PNB</span></a>
+          <a href="#"
+            ><span
+              class="gap-title aumentarFontClass DiminuirFonteClass themas"
+              id="link2"
+              >Cursos PNB</span
+            ></a
+          >
         </div>
 
         <div class="cards-produtos-container" id="div1">
           <div class="cards-produtos-title">
-            <h1 class="animate__animated animate__fadeInUp">
+            <h1
+              class="animate__animated aumentarFontClass DiminuirFonteClass themas"
+            >
               Suporte Extendido
             </h1>
-            <span class="animate__animated animate__fadeInUp"
+            <span
+              class="animate__animated aumentarFontClass DiminuirFonteClass themas"
               >Saiba mais sobre o Suporte Extendido</span
             >
           </div>
@@ -921,24 +979,38 @@
             <div class="cards-texts animate__animated card-home-1">
               <div class="cards-content">
                 <a href=""
-                  ><button class="btn-promo">Valor promocional</button></a
+                  ><button
+                    class="btn-promo aumentarFontClass DiminuirFonteClass"
+                  >
+                    Valor promocional
+                  </button></a
                 >
-                <h1>InfoBolso - Recomendações <br />(Semestral 09/22)</h1>
-                <p class="active-text">
+                <h1 class="aumentarFontClass DiminuirFonteClass">
+                  InfoBolso - Recomendações <br />(Semestral 09/22)
+                </h1>
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
                   Grupo de Recomendações do <br />InfoBolso
                 </p>
-                <p class="active-text">Recomendações</p>
-                <p class="inactive-text">Suporte ao vivo do Põe no Bolso</p>
-                <p class="inactive-text">Suporte mensal com especialistas</p>
-                <p class="inactive-text">Aulas ao vivo por semana</p>
-                <p class="inactive-text">
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
+                  Recomendações
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte ao vivo do Põe no Bolso
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte mensal com especialistas
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Aulas ao vivo por semana
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
-                <p class="inactive-text">
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo todos os dias com especialistas
                 </p>
 
-                <h3>R$ 54.69</h3>
+                <h3 class="aumentarFontClass DiminuirFonteClass">R$ 54.69</h3>
 
                 <a href=""><button class="btn-buy">Assinar</button></a>
               </div>
@@ -947,24 +1019,38 @@
             <div class="cards-texts animate__animated card-home-4">
               <div class="cards-content">
                 <a href=""
-                  ><button class="btn-promo">Valor promocional</button></a
+                  ><button
+                    class="btn-promo aumentarFontClass DiminuirFonteClass"
+                  >
+                    Valor promocional
+                  </button></a
                 >
-                <h1>InfoBolso - Recomendações <br />(Semestral 09/22)</h1>
-                <p class="active-text">
+                <h1 class="aumentarFontClass DiminuirFonteClass">
+                  InfoBolso - Recomendações <br />(Semestral 09/22)
+                </h1>
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
                   Grupo de Recomendações do <br />InfoBolso
                 </p>
-                <p class="active-text">Recomendações</p>
-                <p class="inactive-text">Suporte ao vivo do Põe no Bolso</p>
-                <p class="inactive-text">Suporte mensal com especialistas</p>
-                <p class="inactive-text">Aulas ao vivo por semana</p>
-                <p class="inactive-text">
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
+                  Recomendações
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte ao vivo do Põe no Bolso
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte mensal com especialistas
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Aulas ao vivo por semana
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
-                <p class="inactive-text">
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo todos os dias com especialistas
                 </p>
 
-                <h3>R$ 54.69</h3>
+                <h3 class="aumentarFontClass DiminuirFonteClass">R$ 54.69</h3>
 
                 <a href=""><button class="btn-buy">Assinar</button></a>
               </div>
@@ -973,24 +1059,38 @@
             <div class="cards-texts">
               <div class="cards-content">
                 <a href=""
-                  ><button class="btn-promo">Valor promocional</button></a
+                  ><button
+                    class="btn-promo aumentarFontClass DiminuirFonteClass"
+                  >
+                    Valor promocional
+                  </button></a
                 >
-                <h1>InfoBolso - Recomendações <br />(Semestral 09/22)</h1>
-                <p class="active-text">
+                <h1 class="aumentarFontClass DiminuirFonteClass">
+                  InfoBolso - Recomendações <br />(Semestral 09/22)
+                </h1>
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
                   Grupo de Recomendações do <br />InfoBolso
                 </p>
-                <p class="active-text">Recomendações</p>
-                <p class="inactive-text">Suporte ao vivo do Põe no Bolso</p>
-                <p class="inactive-text">Suporte mensal com especialistas</p>
-                <p class="inactive-text">Aulas ao vivo por semana</p>
-                <p class="inactive-text">
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
+                  Recomendações
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte ao vivo do Põe no Bolso
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte mensal com especialistas
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Aulas ao vivo por semana
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
-                <p class="inactive-text">
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo todos os dias com especialistas
                 </p>
 
-                <h3>R$ 54.69</h3>
+                <h3 class="aumentarFontClass DiminuirFonteClass">R$ 54.69</h3>
 
                 <a href=""><button class="btn-buy">Assinar</button></a>
               </div>
@@ -998,23 +1098,39 @@
 
             <div class="last-card cards-texts">
               <div class="cards-content">
-                <a href=""><button class="btn-promo">Melhor escolha</button></a>
-                <h1>Suporte Estendido <br />PNB - Jul a Set</h1>
-                <p class="active-text">
+                <a href=""
+                  ><button
+                    class="btn-promo aumentarFontClass DiminuirFonteClass"
+                  >
+                    Melhor escolha
+                  </button></a
+                >
+                <h1 class="aumentarFontClass DiminuirFonteClass">
+                  Suporte Estendido <br />PNB - Jul a Set
+                </h1>
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
                   Grupo de Recomendações do <br />InfoBolso
                 </p>
-                <p class="active-text">Recomendações</p>
-                <p class="inactive-text">Suporte ao vivo do Põe no Bolso</p>
-                <p class="inactive-text">Suporte mensal com especialistas</p>
-                <p class="inactive-text">Aulas ao vivo por semana</p>
-                <p class="inactive-text">
+                <p class="active-text aumentarFontClass DiminuirFonteClass">
+                  Recomendações
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte ao vivo do Põe no Bolso
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Suporte mensal com especialistas
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
+                  Aulas ao vivo por semana
+                </p>
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo Põe no Bolso por 3 meses
                 </p>
-                <p class="inactive-text">
+                <p class="inactive-text aumentarFontClass DiminuirFonteClass">
                   Suporte ao vivo todos os dias com especialistas
                 </p>
 
-                <h3>R$ 297.00</h3>
+                <h3 class="aumentarFontClass DiminuirFonteClass">R$ 297.00</h3>
 
                 <a href=""><button class="btn-buy">Assinar</button></a>
               </div>
@@ -1274,13 +1390,15 @@
       </div>
     </div>
 
-    <div class="sobre-pnb">
+    <div class="sobre-pnb themas">
       <div class="container-pnb">
         <div class="content-pnb">
           <div class="title-pnb">
-            <h1>
+            <h1 class="aumentarFontClass DiminuirFonteClass themas">
               O que dizem <br />
-              <span>sobre a PNB</span>
+              <span class="aumentarFontClass DiminuirFonteClass themas"
+                >sobre a PNB</span
+              >
             </h1>
           </div>
 
@@ -1561,22 +1679,29 @@
       </div>
     </div>
 
-    <div id="section-duvida">
+    <div id="section-duvida" class="themas">
       <div class="container container-duvida">
         <div class="duvida-title">
-          <h1 class="fade-in">Ficou alguma <br /><span>Dúvida?</span></h1>
+          <h1 class="fade-in aumentarFontClass DiminuirFonteClass themas">
+            Ficou alguma <br /><span
+              class="aumentarFontClass DiminuirFonteClass themas"
+              >Dúvida?</span
+            >
+          </h1>
         </div>
 
         <div class="accordion_item">
           <div class="accordion_header">
-            <span> Como funciona o suporte privado </span>
+            <span class="aumentarFontClass DiminuirFonteClass themas">
+              Como funciona o suporte privado
+            </span>
             <div class="icon">
-              <i class="fa-solid fa-plus" style="color: #000000"></i>
+              <i class="fa-solid fa-plus themas" style="color: #000000"></i>
             </div>
           </div>
 
           <div class="accordion_content">
-            <p>
+            <p class="aumentarFontClass DiminuirFonteClass">
               HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
               mais básico da web. Define o significado e a estrutura do conteúdo
               da web.
@@ -1586,14 +1711,16 @@
 
         <div class="accordion_item">
           <div class="accordion_header">
-            <span> Posso assistir as aulas a qualquer momento </span>
+            <span class="aumentarFontClass DiminuirFonteClass themas">
+              Posso assistir as aulas a qualquer momento
+            </span>
             <div class="icon">
-              <i class="fa-solid fa-plus" style="color: #000000"></i>
+              <i class="fa-solid fa-plus themas" style="color: #000000"></i>
             </div>
           </div>
 
           <div class="accordion_content">
-            <p>
+            <p class="aumentarFontClass DiminuirFonteClass">
               JavaScript® (às vezes abreviado para JS) é uma linguagem leve,
               interpretada e baseada em objetos com funções de primeira classe,
               mais conhecida como a linguagem de script para páginas Web, mas
@@ -1610,14 +1737,16 @@
 
         <div class="accordion_item">
           <div class="accordion_header">
-            <span> Como acesso os cursos </span>
+            <span class="aumentarFontClass DiminuirFonteClass themas">
+              Como acesso os cursos
+            </span>
             <div class="icon">
-              <i class="fa-solid fa-plus" style="color: #000000"></i>
+              <i class="fa-solid fa-plus themas" style="color: #000000"></i>
             </div>
           </div>
 
           <div class="accordion_content">
-            <p>
+            <p class="aumentarFontClass DiminuirFonteClass">
               CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma
               linguagem de estilo (en-US) usada para descrever a apresentação de
               um documento escrito em HTML. CSS (Cascading Style Sheets ou
@@ -1630,59 +1759,8 @@
           </div>
         </div>
 
-        <!-- <div class="accordion-duvida fade-in">
-          <div class="accordion">
-            <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false">
-                <span class="accordion-title"
-                  >Como funciona o suporte privado</span
-                ><span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <button id="accordion-button-2" aria-expanded="false">
-                <span class="accordion-title">Como acesso os cursos</span
-                ><span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <button id="accordion-button-3" aria-expanded="false">
-                <span class="accordion-title"
-                  >Posso assistir as aulas a qualquer momento</span
-                ><span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <div class="parceiros-duvida fade-in">
-          <h4>Parceiros:</h4>
+          <h4 class="aumentarFontClass DiminuirFonteClass">Parceiros:</h4>
 
           <div class="card-parceiros">
             <div class="card-parceiros-content">
@@ -2154,6 +2232,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script defer src="./js/carrosel.js"></script>
+    <script defer src="./js/tooltips.js"></script>
 
     <script defer src="vendor/counterup.js"></script>
     <!-- <script defer src="vendor/menuFixo.js"></script> -->
