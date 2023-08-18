@@ -1,29 +1,33 @@
-// var botaoTema = document.getElementById("contrastTogglea");
-// var temaAtual = "normal"; // Começa com o tema padrão
+var elementosAnimados = document.querySelectorAll(".animate__animated");
 
-// botaoTema.addEventListener("click", function () {
-//   if (temaAtual === "normal") {
-//     alterarTema("dark");
-//     temaAtual = "dark";
-//   } else {
-//     alterarTema("normal");
-//     temaAtual = "normal";
-//   }
-// });
+elementosAnimados.forEach(function (elemento) {
+  new Waypoint({
+    element: elemento,
+    handler: function () {
+      elemento.classList.add("animate__fadeInUp");
+      this.destroy();
+    },
+    offset: "100%",
+  });
+});
 
-// function alterarTema(tema) {
-//   var elementos = document.querySelectorAll(".themas"); // Substitua '.elemento-alterar' pela classe dos elementos que deseja alterar
+var botaoAbrirModal = document.getElementById("view");
+var modal = document.getElementById("myModal");
+var botaoFechar = document.getElementsByClassName("fechar")[0];
 
-//   for (var i = 0; i < elementos.length; i++) {
-//     if (tema === "dark") {
-//       elementos[i].style.backgroundColor = "black";
-//       elementos[i].style.color = "white";
-//     } else if (tema === "normal") {
-//       elementos[i].style.backgroundColor = ""; // Reverte para o estilo padrão
-//       elementos[i].style.color = ""; // Reverte para o estilo padrão
-//     }
-//   }
-// }
+botaoAbrirModal.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+botaoFechar.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
 
 var botaoTema = document.getElementById("contrastTogglea");
 var temaAtual = "normal"; // Começa com o tema padrão
