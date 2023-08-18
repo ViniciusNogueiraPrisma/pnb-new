@@ -678,7 +678,7 @@ function VerifyActive(item, content, content_actived) {
   icon_item_active.forEach(
     (item) =>
       (item.innerHTML =
-        "<i class='fa-solid fa-plus themas' style='color: #000000;''></i>")
+        "<i class='fa-solid fa-plus themas' ></i>")
   );
 
   if (content_actived) {
@@ -688,7 +688,7 @@ function VerifyActive(item, content, content_actived) {
 
   if (content !== content_actived) {
     icon_item.innerHTML =
-      "<i class='fa-solid fa-minus themas' style='color: #000000;''></i>";
+      "<i class='fa-solid fa-minus themas' ></i>";
     content.classList.add("active");
     content.style.height = content.scrollHeight + 10 + "px";
   }

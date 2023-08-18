@@ -46,20 +46,20 @@ function alterarTema(tema) {
       elementos[i].style.backgroundColor = "black";
       elementos[i].style.color = "white";
 
-      // Aplicar efeito negativo nas imagens
-      var imagens = elementos[i].querySelectorAll("img");
-      for (var j = 0; j < imagens.length; j++) {
-        imagens[j].style.filter = "invert(100%)"; // Inverte as cores da imagem
-      }
+      //   // Aplicar efeito negativo nas imagens
+      //   var imagens = elementos[i].querySelectorAll("img");
+      //   for (var j = 0; j < imagens.length; j++) {
+      //     imagens[j].style.filter = "invert(100%)"; // Inverte as cores da imagem
+      //   }
     } else if (tema === "normal") {
       elementos[i].style.backgroundColor = ""; // Reverte para o estilo padrão
       elementos[i].style.color = ""; // Reverte para o estilo padrão
 
-      // Remover o efeito negativo das imagens
-      var imagens = elementos[i].querySelectorAll("img");
-      for (var j = 0; j < imagens.length; j++) {
-        imagens[j].style.filter = "none"; // Remove o efeito de inversão de cores
-      }
+      //   // Remover o efeito negativo das imagens
+      //   var imagens = elementos[i].querySelectorAll("img");
+      //   for (var j = 0; j < imagens.length; j++) {
+      //     imagens[j].style.filter = "none"; // Remove o efeito de inversão de cores
+      //   }
     }
   }
 }
