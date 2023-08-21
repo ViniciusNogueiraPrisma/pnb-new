@@ -1,15 +1,19 @@
-var elementosAnimados = document.querySelectorAll(".animate__animated");
+// var elementosAnimados = document.querySelectorAll(".animate__animated");
 
-elementosAnimados.forEach(function (elemento) {
-  new Waypoint({
-    element: elemento,
-    handler: function () {
-      elemento.classList.add("animate__fadeInUp");
-      this.destroy();
-    },
-    offset: "100%",
-  });
-});
+// elementosAnimados.forEach(function (elemento) {
+//   new Waypoint({
+//     element: elemento,
+//     handler: function () {
+//       elemento.classList.add("animate__fadeInUp");
+//       this.destroy();
+//     },
+//     offset: "100%",
+//   });
+// });
+
+// Animações para aparecer o elemento
+
+AOS.init();
 
 var botaoAbrirModal = document.getElementById("view");
 var modal = document.getElementById("myModal");

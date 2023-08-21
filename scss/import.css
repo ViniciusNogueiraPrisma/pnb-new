@@ -10586,40 +10586,6 @@ input[type=checkbox].switch:disabled:not(:checked):after {
     height: 400px;
   }
 }
-.animate__animated.animate__backInUp {
-  --animate-duration: 2s;
-}
-
-.card-home-1 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-}
-
-.card-home-2 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-}
-
-.card-home-3 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-}
-
-.card-home-4 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-
-.card-home-5 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-
-.card-home-6 {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-
 /* Pages */
 #erro {
   width: 100%;

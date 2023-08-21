@@ -112,11 +112,6 @@ if (window.counterUp) {
   }
 }
 
-// Animações para aparecer o elemento
-// AOS.init({
-//   once: true,
-// });
-
 // window.addEventListener(
 //   "scroll",
 //   debounce(() => {
@@ -676,9 +671,7 @@ function VerifyActive(item, content, content_actived) {
   const icon_item_active = document.querySelectorAll(".icon");
 
   icon_item_active.forEach(
-    (item) =>
-      (item.innerHTML =
-        "<i class='fa-solid fa-plus themas' ></i>")
+    (item) => (item.innerHTML = "<i class='fa-solid fa-plus themas' ></i>")
   );
 
   if (content_actived) {
@@ -687,8 +680,7 @@ function VerifyActive(item, content, content_actived) {
   }
 
   if (content !== content_actived) {
-    icon_item.innerHTML =
-      "<i class='fa-solid fa-minus themas' ></i>";
+    icon_item.innerHTML = "<i class='fa-solid fa-minus themas' ></i>";
     content.classList.add("active");
     content.style.height = content.scrollHeight + 10 + "px";
   }
